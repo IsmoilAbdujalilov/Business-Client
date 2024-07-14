@@ -470,13 +470,17 @@ header .intro-text {
   background: transparent;
   border: 0;
 }
+
+.swiper-wrapper {
+  height: 45% !important;
+}
+
 #team .thumbnail .caption {
   padding: 10px 0 0;
   color: #888;
 }
 /* Contact Section */
 #contact {
-  margin-top: 50px;
   padding: 100px 0 60px;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: rgba(255, 255, 255, 0.75);

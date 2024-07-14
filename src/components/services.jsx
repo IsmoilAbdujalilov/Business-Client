@@ -11,11 +11,14 @@ export const Services = (props) => {
             dapibus leonec.
           </p>
         </div>
-        <div className="row">
+        <div className="grid">
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
-                  {" "}
+                <div
+                  key={`${d.name}-${i}`}
+                  style={{ width: "100%" }}
+                  className="grid-col"
+                >
                   <i className={d.icon}></i>
                   <div className="service-desc">
                     <h3>{d.name}</h3>

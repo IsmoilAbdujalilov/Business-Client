@@ -313,8 +313,25 @@ header .intro-text {
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: #fff;
 }
+
+.grid {
+  gap: 50px;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media only screen and (max-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
 #services .service-desc {
-  margin: 10px 10px 20px;
+  margin: 0px;
 }
 #services h2 {
   color: #fff;

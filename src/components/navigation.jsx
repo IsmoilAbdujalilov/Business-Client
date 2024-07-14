@@ -1,5 +1,6 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import Logo from "../assets/rasm.jpg";
+import { Link, Route } from "react-router-dom";
 
 export const Navigation = (props) => {
   return (
@@ -18,9 +19,9 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="/">
-            React Landing Page
-          </a>{" "}
+          <Link className="navbar-brand page-scroll" to="/">
+            <img style={{ width: "150px" }} src={Logo} alt="British Analytic" />
+          </Link>
         </div>
 
         <div

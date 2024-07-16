@@ -68,53 +68,88 @@
   "Services": [
     {
       "icon": "fa fa-cart-arrow-down box",
-      "name": "Integrity / Intellectual Integrity:",
-      "text": "Upholding integrity ensures honesty, transparency, and ethical behaviors in all aspects of our work. Intellectual integrity goes further, emphasizing a commitment to truth, credibility, and intellectual rigor in our strategies and solutions."
+      "name": "Business Analysis Solutions (Diagnosis)",
+      "text": "Assessing the current state of the business, identifying areas for improvement, and developing strategies to drive growth and success. Conducting in-depth analysis of a company's performance, processes, and market dynamics to identify areas of improvement and growth opportunities."
     },
     {
       "icon": "fa fa-cart-arrow-down box",
-      "name": "Customer Focus / Client focus/ Customer Care:",
-      "text": "Placing the customer at the center of our operations drives us to understand their exact needs, that enables us to deliver exceptional service and build lasting relationships."
+      "name": "Risk management:",
+      "text": "Risk management is the identification, assessment, and prioritization of risks followed by coordinated and economical application of resources to minimize, monitor, and control the probability and impact of unforeseen events. It aims to proactively mitigate potential risks to an organization's objectives, assets, and stakeholders."
     },
     {
       "icon": "fa fa-cloud-download box",
-      "name": "Innovation",
-      "text": "Embracing innovation fosters creativity that drives cutting-edge solutions and strategies empowering our clients to stay eons ahead of their competitors in today’s dynamic business environment."
+      "name": "Governance management",
+      "text": "Governance management refers to the system and processes by which organizations are directed, controlled, and held accountable. It encompasses the structures, policies, and procedures put in place to ensure that an organization operates efficiently, ethically, and in alignment with its strategic goals and regulatory requirements."
     },
     {
       "icon": "fa fa-language box",
-      "name": "Collaboration",
-      "text": "We clearly understand that collaboration is the key to success in modern business world. Collaboration promotes synergy by harnessing diverse perspectives and collective wisdom leading to holistic, sustainable and impactful solutions."
+      "name": "Organizational Development",
+      "text": "Supporting organizations in improving their structures, culture, and capabilities to enhance overall performance and competitiveness."
     },
     {
       "icon": "fa fa-plane box",
-      "name": "Result driven",
-      "text": "Being result-driven instills a relentless focus on achieving tangible outcomes, meeting objectives, emphasizes efficiency, effectiveness, delivering tangible value that exceeds expectations and drives continuous improvement."
+      "name": "Market Research and Analysis",
+      "text": "Conducting research on industry trends, market demands, and consumer behavior to help companies make informed strategic decisions."
     },
     {
       "icon": "fa fa-pie-chart box",
-      "name": "Accountability",
-      "text": "For us upholding accountability means taking ownership of our actions, decisions and outcomes; demonstrating reliability, transparency, and a commitment to delivering on promises."
+      "name": "HR Strategy",
+      "text": "Human Resource (HR) strategy, also referred to as human capital advisory or HRM consulting, we advise about implementation activities related to the management of an organisation’s human capital and the HR function. The scope of services range from overarching work on talent management, cadre management, human capital strategy, to the design and deployment of a compensation & benefits framework, down to the transformation of the HR function. "
     },
     {
       "icon": "fa fa-pie-chart box",
-      "name": "Passion for Excellence",
-      "text": "We have a burning passion for excellence that inspires us to strive for the highest standards of quality, continuous improvement and innovation in everything we do, setting us apart in the industry. We do don’t settle for the average, run of the mill solutions. We deliver the best possible value to our esteemed clients. "
+      "name": "Business Process Reengineering (BPR)",
+      "text": "Involves analyzing and redesigning workflows and processes within an organization to increase efficiency, eliminate bottlenecks, and improve performance."
     },
     {
       "icon": "fa fa-pie-chart box",
-      "name": "Courage",
-      "text": "Valuing courage empowers us to embrace uncertainty, take calculated risks and challenge traditional thinking to explore new opportunities and drive meaningful change."
+      "name": "Performance Management Services",
+      "text": "Provides tools and strategies to monitor, evaluate, and enhance the performance of individuals, teams, and the organization as a whole by utilizing SMART and relevant KPIs."
     },
     {
       "icon": "fa fa-pie-chart box",
-      "name": "Social Responsibility",
-      "text": "We understand that nothing operates in vacuum and as such we fully embrace our social responsibility that drives us to consider the wider impact of our actions on economy, society, and the environment, leading us to prioritize sustainability, diversity, inclusion, and community engagement in all our endeavors."
+      "name": "Strategic Evaluation Services",
+      "text": "Focuses on evaluating the company's current strategy, market position, and competitive landscape to identify strengths, weaknesses, opportunities, and threats. Providing assessments and evaluations of organizational strategies, structures, operations, and performances to ensure they align with business goals."
     },
     {
-      "name": "Trust",
       "icon": "fa fa-pie-chart box",
-      "text": "We also understand that Trust is the bedrock of any successful relationship. Trust breeds collaboration that evolves into loyalty and long-term partnerships, based on confidence in the consultancy's expertise and reliability. Trust encourages open dialogue, feedback and innovation, ultimately driving growth, sustainability and a positive reputation."
+      "name": "Strategic Planning",
+      "text": "Collaborating with leadership to develop long-term strategic plans that align with the company's mission, vision, and objectives."
+    },
+    {
+      "icon": "fa fa-pie-chart box",
+      "name": "Problem-Solving Consultation (Troubleshooting)",
+      "text": "Offers expertise in identifying, analyzing, and resolving complex business problems to help clients achieve their goals effectively. Offering strategic problem-solving techniques and frameworks to address challenges, optimize operations, and drive innovation within the organization."
+    },
+    {
+      "icon": "fa fa-pie-chart box",
+      "name": "Change Management Consulting:",
+      "text": "Assists organizations in planning, implementing, and managing change initiatives to ensure successful transitions and sustainable results. Assisting organizations in managing transitions, implementing new processes, and ensuring smooth change adoption within the company. "
+    },
+    {
+      "icon": "fa fa-pie-chart box",
+      "name": "Digital Strategy",
+      "text": "Digital strategy involves leveraging digital technologies, channels, and platforms to achieve business objectives and enhance the overall performance of an organization. It encompasses developing a roadmap for how a company will use digital resources to generate value, improve customer experiences, increase operational efficiency, and stay competitive in the digital age."
+    },
+    {
+      "icon": "fa fa-pie-chart box",
+      "name": "Regional and International Economic Development Services",
+      "text": "Regional and international economic development services focus on fostering economic growth, sustainable development, and increased prosperity within specific regions or across international borders. These services typically involve collaboration between governments, businesses, and organizations to design and implement strategies that promote investment, trade, infrastructure development, job creation, and overall economic well-being on a regional or global scale."
+    },
+    {
+      "icon": "fa fa-pie-chart box",
+      "name": "Business Model Transformation (BMT)",
+      "text": "Business Model Transformation refers to the process of fundamentally changing and adapting the way a business creates, captures, and delivers value to its stakeholders. This involves reevaluating and modifying key elements of a company's business model to remain relevant and competitive in changing markets."
+    },
+    {
+      "icon": "fa fa-pie-chart box",
+      "name": "Trust management",
+      "text": "Trust management involves the establishment, maintenance, and nurturing of trust within an organization or between parties involved in business transactions. It focuses on building credibility, reliability, and integrity in relationships to ensure transparency, collaboration, and sustainable partnerships."
+    },
+    {
+      "icon": "fa fa-pie-chart box",
+      "name": "Mergers and Acquisitions (M&A) - Corporate Restructuring:",
+      "text": "Providing guidance on mergers, acquisitions, divestitures, and other forms of corporate restructuring to optimize business operations and portfolio management."
     }
   ],
   "Testimonials": [

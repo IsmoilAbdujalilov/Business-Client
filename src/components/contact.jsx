@@ -184,6 +184,30 @@ export const Contact = (props) => {
                 </p>
               </a>
             </div>
+            <div className="contact-item">
+              <a href="https://t.me/MurodovDiyorbek" target="_blank">
+                <p
+                  style={{
+                    gap: "20px",
+                    display: "flex",
+                    color: "white",
+                    alignItems: "center",
+                  }}
+                >
+                  <span
+                    style={{
+                      gap: "10px",
+                      display: "flex",
+                      alignItems: "center",
+                      marginBottom: "0px",
+                    }}
+                  >
+                    <i className="fa-solid fa-location-dot"></i> Adress
+                  </span>
+                  Tirsakobod 4/194a, Tashkent, Uzbekistan
+                </p>
+              </a>
+            </div>
           </div>
         </div>
       </div>

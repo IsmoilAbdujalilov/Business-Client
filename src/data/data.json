@@ -67,53 +67,53 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
+      "icon": "fa fa-cart-arrow-down box",
       "name": "Integrity / Intellectual Integrity:",
       "text": "Upholding integrity ensures honesty, transparency, and ethical behaviors in all aspects of our work. Intellectual integrity goes further, emphasizing a commitment to truth, credibility, and intellectual rigor in our strategies and solutions."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
+      "icon": "fa fa-cart-arrow-down box",
       "name": "Customer Focus / Client focus/ Customer Care:",
       "text": "Placing the customer at the center of our operations drives us to understand their exact needs, that enables us to deliver exceptional service and build lasting relationships."
     },
     {
-      "icon": "fa fa-cloud-download",
+      "icon": "fa fa-cloud-download box",
       "name": "Innovation",
       "text": "Embracing innovation fosters creativity that drives cutting-edge solutions and strategies empowering our clients to stay eons ahead of their competitors in today’s dynamic business environment."
     },
     {
-      "icon": "fa fa-language",
+      "icon": "fa fa-language box",
       "name": "Collaboration",
       "text": "We clearly understand that collaboration is the key to success in modern business world. Collaboration promotes synergy by harnessing diverse perspectives and collective wisdom leading to holistic, sustainable and impactful solutions."
     },
     {
-      "icon": "fa fa-plane",
+      "icon": "fa fa-plane box",
       "name": "Result driven",
       "text": "Being result-driven instills a relentless focus on achieving tangible outcomes, meeting objectives, emphasizes efficiency, effectiveness, delivering tangible value that exceeds expectations and drives continuous improvement."
     },
     {
-      "icon": "fa fa-pie-chart",
+      "icon": "fa fa-pie-chart box",
       "name": "Accountability",
       "text": "For us upholding accountability means taking ownership of our actions, decisions and outcomes; demonstrating reliability, transparency, and a commitment to delivering on promises."
     },
     {
-      "icon": "fa fa-pie-chart",
+      "icon": "fa fa-pie-chart box",
       "name": "Passion for Excellence",
       "text": "We have a burning passion for excellence that inspires us to strive for the highest standards of quality, continuous improvement and innovation in everything we do, setting us apart in the industry. We do don’t settle for the average, run of the mill solutions. We deliver the best possible value to our esteemed clients. "
     },
     {
-      "icon": "fa fa-pie-chart",
+      "icon": "fa fa-pie-chart box",
       "name": "Courage",
       "text": "Valuing courage empowers us to embrace uncertainty, take calculated risks and challenge traditional thinking to explore new opportunities and drive meaningful change."
     },
     {
-      "icon": "fa fa-pie-chart",
+      "icon": "fa fa-pie-chart box",
       "name": "Social Responsibility",
       "text": "We understand that nothing operates in vacuum and as such we fully embrace our social responsibility that drives us to consider the wider impact of our actions on economy, society, and the environment, leading us to prioritize sustainability, diversity, inclusion, and community engagement in all our endeavors."
     },
     {
       "name": "Trust",
-      "icon": "fa fa-pie-chart",
+      "icon": "fa fa-pie-chart box",
       "text": "We also understand that Trust is the bedrock of any successful relationship. Trust breeds collaboration that evolves into loyalty and long-term partnerships, based on confidence in the consultancy's expertise and reliability. Trust encourages open dialogue, feedback and innovation, ultimately driving growth, sustainability and a positive reputation."
     }
   ],
@@ -181,7 +181,7 @@
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
+      "icon": "fab fa-telegram",
       "title": "Lorem ipsum",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     },

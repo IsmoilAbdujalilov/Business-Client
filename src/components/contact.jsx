@@ -15,16 +15,22 @@ export const Contact = (props) => {
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
   const clearState = () => setState({ ...initialState });
-  
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
-    
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
+
+    {
+      /* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */
+    }
+
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        e.target,
+        "YOUR_PUBLIC_KEY"
+      )
       .then(
         (result) => {
           console.log(result.text);
@@ -101,51 +107,82 @@ export const Contact = (props) => {
           <div className="col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
               <h3>Contact Info</h3>
-              <p>
+              {/* <p>
                 <span>
                   <i className="fa fa-map-marker"></i> Address
                 </span>
-                {props.data ? props.data.address : "loading"}
-              </p>
+                {props.data.address}
+              </p> */}
             </div>
             <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-phone"></i> Phone
-                </span>{" "}
-                {props.data ? props.data.phone : "loading"}
-              </p>
+              <a href="tel:+998998993515">
+                <p
+                  style={{
+                    gap: "20px",
+                    display: "flex",
+                    color: "white",
+                    alignItems: "center",
+                  }}
+                >
+                  <span
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginBottom: "0px",
+                    }}
+                  >
+                    <i className="fa fa-phone"></i> Phone
+                  </span>{" "}
+                  +998998993515
+                </p>
+              </a>
             </div>
             <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-envelope-o"></i> Email
-                </span>{" "}
-                {props.data ? props.data.email : "loading"}
-              </p>
+              <a href="mailto:diyorbek.britishanalytica@gmail.com">
+                <p
+                  style={{
+                    gap: "20px",
+                    display: "flex",
+                    color: "white",
+                    alignItems: "center",
+                  }}
+                >
+                  <span
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginBottom: "0px",
+                    }}
+                  >
+                    <i className="fa fa-envelope-o"></i> Email
+                  </span>{" "}
+                  diyorbek.britishanalytica@gmail.com
+                </p>
+              </a>
             </div>
-          </div>
-          <div className="col-md-12">
-            <div className="row">
-              <div className="social">
-                <ul>
-                  <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div className="contact-item">
+              <a href="https://t.me/MurodovDiyorbek" target="_blank">
+                <p
+                  style={{
+                    gap: "20px",
+                    display: "flex",
+                    color: "white",
+                    alignItems: "center",
+                  }}
+                >
+                  <span
+                    style={{
+                      gap: "10px",
+                      display: "flex",
+                      alignItems: "center",
+                      marginBottom: "0px",
+                    }}
+                  >
+                    <i className="fab fa-telegram"></i> Telegram
+                  </span>
+                  MurodovDiyorbek
+                </p>
+              </a>
             </div>
           </div>
         </div>

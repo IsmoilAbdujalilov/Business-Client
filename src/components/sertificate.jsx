@@ -19,7 +19,7 @@ import Sertificate15 from "../assets/sertificate-15.png";
 
 const Sertificate = () => {
   return (
-    <section className="container" style={{ padding: "40px" }}>
+    <section className="container" style={{ padding: "40px" }} id="sertificate">
       <Swiper
         modules={[Autoplay]}
         autoplay={{

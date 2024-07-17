@@ -478,8 +478,13 @@ header .intro-text {
   color: #666;
 }
 /* Team Section */
+
+i {
+  color: white !important;
+}
+
 #team {
-  padding: 0px 0;
+  padding: 50px 0;
 }
 #team h4 {
   margin: 5px 0;
@@ -535,7 +540,6 @@ header .intro-text {
 }
 /* Contact Section */
 #contact {
-  margin-top: 50px;
   padding: 100px 0 60px;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: rgba(255, 255, 255, 0.75);

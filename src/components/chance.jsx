@@ -4,7 +4,7 @@ import File2 from "../assets/file-2.pdf";
 
 const Chance = () => {
   return (
-    <section className="chance" id="course">
+    <section className="chance" id="services">
       <div className="container">
         <h2 className="chance-title" style={{ margin: "0px" }}>
           Our services

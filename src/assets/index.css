@@ -2,6 +2,10 @@
   padding: 50px 0px;
 }
 
+.chance-title {
+  margin-bottom: 0px;
+}
+
 .chance__rows {
   gap: 20px;
   display: grid;
@@ -17,8 +21,15 @@
   }
 
   @media only screen and (max-width: 576px) {
-    padding: 0px;
   }
+}
+
+.chance__column-title {
+  color: black !important;
+}
+
+.chance__column-text {
+  color: black !important;
 }
 
 .caption {

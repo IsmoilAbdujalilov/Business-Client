@@ -4,8 +4,12 @@ import File2 from "../assets/file-2.pdf";
 
 const Chance = () => {
   return (
-    <section className="chance" id="services">
-      <div className="container">
+    <div className="container">
+      <section
+        className="chance"
+        id="services"
+        style={{ padding: "50px", borderRadius: "20px" }}
+      >
         <h2 className="chance-title" style={{ margin: "0px" }}>
           Our services
         </h2>
@@ -48,8 +52,8 @@ const Chance = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

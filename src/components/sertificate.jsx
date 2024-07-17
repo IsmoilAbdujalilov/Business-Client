@@ -2,9 +2,6 @@ import React from "react";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Sertificate1 from "../assets/sertificate-1.png";
-import Sertificate2 from "../assets/sertificate-2.png";
-import Sertificate3 from "../assets/sertificate-3.png";
-import Sertificate4 from "../assets/sertificate-4.png";
 import Sertificate5 from "../assets/sertificate-5.png";
 import Sertificate6 from "../assets/sertificate-6.png";
 import Sertificate7 from "../assets/sertificate-7.png";
@@ -12,14 +9,23 @@ import Sertificate8 from "../assets/sertificate-8.png";
 import Sertificate9 from "../assets/sertificate-9.png";
 import Sertificate10 from "../assets/sertificate-10.png";
 import Sertificate11 from "../assets/sertificate-11.png";
-import Sertificate12 from "../assets/sertificate-12.png";
 import Sertificate13 from "../assets/sertificate-13.png";
 import Sertificate14 from "../assets/sertificate-14.png";
 import Sertificate15 from "../assets/sertificate-15.png";
 
 const Sertificate = () => {
   return (
-    <section className="container" style={{ padding: "40px" }} id="sertificate">
+    <section
+      id="sertificate"
+      className="container"
+      style={{
+        margin: "50px auto",
+        backgroundColor: "#f5f5f7",
+        border: "1px solid #ddd",
+        borderRadius: "20px",
+        padding: "40px",
+      }}
+    >
       <h2 style={{ marginBottom: "50px" }}>Our sertificates</h2>
       <Swiper
         modules={[Autoplay]}

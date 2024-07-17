@@ -2,8 +2,17 @@ import React from "react";
 
 export const About = (props) => {
   return (
-    <div id="about">
-      <div className="container">
+    <div className="container">
+      <div
+        id="about"
+        style={{
+          margin: "50px 0px",
+          padding: "40px 20px",
+          borderRadius: "15px",
+          border: "1px solid #ddd",
+          backgroundColor: "#f5f5f7",
+        }}
+      >
         <div className="row">
           <div className="col-xs-12 col-md-6">
             {" "}

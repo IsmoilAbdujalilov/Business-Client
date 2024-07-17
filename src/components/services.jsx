@@ -16,6 +16,7 @@ export const Services = (props) => {
       >
         <div className="section-title">
           <h2 style={{ color: "white" }}>Our values</h2>
+          <hr className="section-horizontal-rule"/>
         </div>
         <div className="grid">
           {props.data

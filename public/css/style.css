@@ -316,6 +316,12 @@ header .intro-text {
   }
 }
 
+.section-horizontal-rule {
+  background-color: white;
+  width: 100px;
+  margin: 0px auto;
+}
+
 .service-desc {
   max-width: 400px;
   text-align: left;

@@ -55,7 +55,7 @@ const Sertificate = () => {
             alt="sertificate"
           />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img
             height={400}
             style={{
@@ -68,22 +68,8 @@ const Sertificate = () => {
             src={Sertificate2}
             alt="sertificate"
           />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            height={400}
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-            }}
-            width={300}
-            src={Sertificate3}
-            alt="sertificate"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
+        </SwiperSlide> */}
+        {/* <SwiperSlide>
           <img
             height={400}
             style={{
@@ -96,7 +82,7 @@ const Sertificate = () => {
             src={Sertificate4}
             alt="sertificate"
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           <img
             height={400}
@@ -195,7 +181,7 @@ const Sertificate = () => {
             alt="sertificate"
           />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img
             height={400}
             style={{
@@ -208,7 +194,7 @@ const Sertificate = () => {
             src={Sertificate12}
             alt="sertificate"
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           <img
             height={400}

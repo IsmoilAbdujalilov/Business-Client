@@ -6,6 +6,12 @@
   margin-bottom: 0px;
 }
 
+.contact__container {
+  @media only screen and (max-width: 576px) {
+    padding: 20px !important;
+  }
+}
+
 .chance__rows {
   gap: 20px;
   display: grid;

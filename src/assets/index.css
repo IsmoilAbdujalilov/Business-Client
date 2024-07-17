@@ -21,6 +21,10 @@
   }
 }
 
+.caption {
+  width: 100%;
+}
+
 .chance__column {
   padding: 20px;
   border-radius: 25px;

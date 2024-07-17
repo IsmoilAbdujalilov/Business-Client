@@ -28,18 +28,14 @@ export const Team = (props) => {
               <div className="caption">
                 <div style={box}>
                   <p>CEO</p>
-                  <p>+20 years</p>
+                  <p>+15 years</p>
                 </div>
                 <h4>Diyorbek Murodov</h4>
-                <p>MBA from Neoma Business School, Reims, France</p>
+                <p>Bachelor of International Economic Relations, TIU</p>
+                <p>PMP-30, Rank 1, Japan International Cooperation Agency</p>
+                <p>Keiei-Juku, Strategic Development of Business Executives</p>
                 <p>
-                  M.Sc. Strategic Project Management from Hariot-Watt
-                  University, Edinburgh, UK; Politecnico di Milano, Italy; Umeå
-                  University, Sweden.
-                </p>
-                <p>
-                  +20 years’ experience of working with 14 different
-                  organisations across the UK and Asia
+                  +15 years’ experience of consulting services in Uzbekistan
                 </p>
                 <a href="">Read more</a>
               </div>
@@ -50,9 +46,10 @@ export const Team = (props) => {
               <img src={User2} alt="Farooq A" className="team-img" />
               <div className="caption">
                 <div style={box}>
-                  <p>Kirmani-Massala</p>
+                  {/* <p>Kirmani-Massala</p> */}
                   <p>+20 years</p>
                 </div>
+                <h4>Farooq A. Kirmani-Massala</h4>
                 <p>MBA from Neoma Business School, Reims, France</p>
                 <p>
                   M.Sc. Strategic Project Management from Hariot-Watt
@@ -63,7 +60,7 @@ export const Team = (props) => {
                   +20 years’ experience of working with 14 different
                   organisations across the UK and Asia
                 </p>
-                <h4>Farooq A</h4>
+
                 <a href="">Read more</a>
               </div>
             </div>

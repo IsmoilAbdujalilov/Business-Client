@@ -17,8 +17,9 @@ export const Team = (props) => {
         <div className="col-md-8 col-md-offset-2 section-title">
           <h2>Meet the Team</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            Empowering organizations to achieve sustainable success and maximum
+            value through innovative strategic solutions specifically shaped to
+            surmount the complexities of the modern business world.
           </p>
         </div>
         <div id="row">

@@ -51,7 +51,7 @@ export const Contact = (props) => {
             style={{
               width: "100%",
               padding: "50px",
-              minHeight: "100%",
+              minHeight: "65%",
               borderRadius: "10px",
               backgroundColor: "rgba(255, 255, 255, 0.2)",
               border: "2px solid rgba(255, 255, 255, 0.4)",

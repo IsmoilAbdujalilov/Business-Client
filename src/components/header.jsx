@@ -1,10 +1,17 @@
 import React from "react";
+import HeroImage from "../assets/hero-image.jpg";
 
 export const Header = (props) => {
+  const backgroundImage = {
+    backgroundSize: "cover",
+    backgroundPosition: "center center",
+    backgroundImage: `url(${HeroImage})`,
+  };
+
   return (
     <header id="header">
       <div className="intro">
-        <div className="overlay">
+        <div className="overlay" style={backgroundImage}>
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-2 intro-text">

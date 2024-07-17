@@ -6,15 +6,9 @@ const Chance = () => {
   return (
     <section className="chance" id="course">
       <div className="container">
-        <h2 className="chance-title">
-          BRITISH ANALYTICA imkoniyatlarini oching
+        <h2 className="chance-title" style={{ margin: "0px" }}>
+          Our services
         </h2>
-        <p className="chance-text">
-          Biz nafaqat nazariyani o'rgatamiz, balki o'quvchilarimizga qisqa vaqt
-          ichida global miqyosda raqobatbardosh dasturchilar bo'lish
-          imkoniyatini beradigan haqiqiy bilimlarni taqdim etamiz. Sizning
-          kar’erangiz butkul o'zgarishi shu erdan boshlanadi.
-        </p>
         <div className="chance__rows">
           <div className="chance__column">
             <h2 className="chance__column-title">Express Diagnostic</h2>

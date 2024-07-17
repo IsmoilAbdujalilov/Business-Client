@@ -185,10 +185,14 @@ export const Contact = (props) => {
               </a>
             </div>
             <div className="contact-item">
-              <a href="https://t.me/MurodovDiyorbek" target="_blank">
+              <a
+                style={{ display: "flex", color: "white", width: "100%" }}
+                href="https://t.me/MurodovDiyorbek"
+                target="_blank"
+              >
                 <p
                   style={{
-                    gap: "20px",
+                    width: "100%",
                     display: "flex",
                     color: "white",
                     alignItems: "center",
@@ -204,14 +208,14 @@ export const Contact = (props) => {
                   >
                     <i className="fa-solid fa-location-dot"></i> Adress
                   </span>
-                  Tirsakobod 4/194a, Tashkent, Uzbekistan
                 </p>
+                Tirsakobod 4/194a, Tashkent, Uzbekistan
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div id="footer">
+      {/* <div id="footer">
         <div className="container text-center">
           <p>
             &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
@@ -220,7 +224,7 @@ export const Contact = (props) => {
             </a>
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

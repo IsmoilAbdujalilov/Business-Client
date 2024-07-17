@@ -5,9 +5,10 @@ import User2 from "../assets/user-2.jpg";
 export const Team = (props) => {
   const box = {
     gap: "25px",
+    width: "100%",
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "space-between",
   };
 
   return (
@@ -21,28 +22,48 @@ export const Team = (props) => {
           </p>
         </div>
         <div id="row">
-          <div className="col-md-6 col-sm-12 team">
+          <div className="col-12 col-sm-12 team">
             <div className="thumbnail">
-              <img src={User1} alt="Diyorbek Murodov" className="team-img" />
+              <img src={User1} alt="Farooq A" className="team-img" />
               <div className="caption">
-                <h4>Diyorbek Murodov</h4>
                 <div style={box}>
                   <p>CEO</p>
-                  <p>+15 years</p>
+                  <p>+20 years</p>
                 </div>
+                <h4>Diyorbek Murodov</h4>
+                <p>MBA from Neoma Business School, Reims, France</p>
+                <p>
+                  M.Sc. Strategic Project Management from Hariot-Watt
+                  University, Edinburgh, UK; Politecnico di Milano, Italy; Umeå
+                  University, Sweden.
+                </p>
+                <p>
+                  +20 years’ experience of working with 14 different
+                  organisations across the UK and Asia
+                </p>
+                <a href="">Read more</a>
               </div>
-              <a href="#">Read more</a>
             </div>
           </div>
-          <div className="col-md-6 col-sm-12 team">
+          <div className="col-12 col-sm-12 team">
             <div className="thumbnail">
               <img src={User2} alt="Farooq A" className="team-img" />
               <div className="caption">
-                <h4>Farooq A</h4>
                 <div style={box}>
                   <p>Kirmani-Massala</p>
                   <p>+20 years</p>
                 </div>
+                <p>MBA from Neoma Business School, Reims, France</p>
+                <p>
+                  M.Sc. Strategic Project Management from Hariot-Watt
+                  University, Edinburgh, UK; Politecnico di Milano, Italy; Umeå
+                  University, Sweden.
+                </p>
+                <p>
+                  +20 years’ experience of working with 14 different
+                  organisations across the UK and Asia
+                </p>
+                <h4>Farooq A</h4>
                 <a href="">Read more</a>
               </div>
             </div>

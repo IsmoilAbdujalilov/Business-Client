@@ -2,17 +2,18 @@ import React from "react";
 
 export const Services = (props) => {
   return (
-    <div
-      id="values"
-      className="text-center"
-      style={{
-        color: "white",
-        padding: "20px",
-        boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.05)",
-        background: "linear-gradient(to right, #6372ff 0%, #5ca9fb 100%)",
-      }}
-    >
-      <div className="container">
+    <div className="container">
+      <div
+        id="values"
+        className="text-center"
+        style={{
+          color: "white",
+          padding: "20px",
+          borderRadius: "20px",
+          boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.05)",
+          background: "linear-gradient(to right, #6372ff 0%, #5ca9fb 100%)",
+        }}
+      >
         <div className="section-title">
           <h2 style={{ color: "white" }}>Our values</h2>
         </div>

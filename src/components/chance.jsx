@@ -1,5 +1,6 @@
 import "../assets/index.css";
 import File1 from "../assets/file-1.pdf";
+import File2 from "../assets/file-2.pdf";
 
 const Chance = () => {
   return (
@@ -46,10 +47,11 @@ const Chance = () => {
               Bizning amaliy yondashuvimiz sizning ishga tayyor bo’lishingizni
               ta'minlaydi.
             </p>
-            {/* <div className="chance__price">
-              <h4 className="chance__price-title">Kurs narxi:</h4>
-              <p className="chance__price-pararaph">23,975,000 so'm</p>
-              </div> */}
+            <div className="chance__price">
+              <a href={File2} target="_blank">
+                Read more
+              </a>
+            </div>
           </div>
         </div>
       </div>

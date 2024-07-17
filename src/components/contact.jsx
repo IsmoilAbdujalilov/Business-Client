@@ -126,108 +126,218 @@ export const Contact = (props) => {
                 </span>
                 {props.data.address}
               </p> */}
+                <ul
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(2,auto)",
+                  }}
+                >
+                  <div className="contact-item">
+                    <a href="tel:+998998993515">
+                      <p
+                        style={{
+                          gap: "20px",
+                          display: "flex",
+                          color: "white",
+                          alignItems: "center",
+                        }}
+                      >
+                        <span
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            marginBottom: "0px",
+                          }}
+                        >
+                          <i className="fa fa-phone"></i> Phone
+                        </span>{" "}
+                      </p>
+                    </a>
+                  </div>
+                  <div className="contact-item">
+                    <a href="mailto:diyorbek.britishanalytica@gmail.com">
+                      <p
+                        style={{
+                          gap: "20px",
+                          display: "flex",
+                          color: "white",
+                          alignItems: "center",
+                        }}
+                      >
+                        <span
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            marginBottom: "0px",
+                          }}
+                        >
+                          <i className="fa fa-envelope-o"></i> Email
+                        </span>{" "}
+                      </p>
+                    </a>
+                  </div>
+                  <div className="contact-item">
+                    <a href="https://t.me/MurodovDiyorbek" target="_blank">
+                      <p
+                        style={{
+                          gap: "20px",
+                          display: "flex",
+                          color: "white",
+                          alignItems: "center",
+                        }}
+                      >
+                        <span
+                          style={{
+                            gap: "10px",
+                            display: "flex",
+                            alignItems: "center",
+                            marginBottom: "0px",
+                          }}
+                        >
+                          <i className="fab fa-telegram"></i> Telegram
+                        </span>
+                      </p>
+                    </a>
+                  </div>
+                  <div className="contact-item">
+                    <a
+                      style={{ display: "flex", color: "white", width: "100%" }}
+                      href="https://t.me/MurodovDiyorbek"
+                      target="_blank"
+                    >
+                      <p
+                        style={{
+                          width: "100%",
+                          display: "flex",
+                          color: "white",
+                          alignItems: "center",
+                        }}
+                      >
+                        <span
+                          style={{
+                            gap: "10px",
+                            display: "flex",
+                            alignItems: "center",
+                            marginBottom: "0px",
+                          }}
+                        >
+                          <i className="fa-solid fa-location-dot"></i> Adress
+                        </span>
+                      </p>
+                    </a>
+                  </div>
+                </ul>
               </div>
-              <ul
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "repeat(2,auto)",
-                }}
-              >
-                <div className="contact-item">
-                  <a href="tel:+998998993515">
-                    <p
-                      style={{
-                        gap: "20px",
-                        display: "flex",
-                        color: "white",
-                        alignItems: "center",
-                      }}
-                    >
-                      <span
+              <div className="contact-item">
+                <h3>Contact Info</h3>
+                {/* <p>
+                <span>
+                  <i className="fa fa-map-marker"></i> Address
+                </span>
+                {props.data.address}
+              </p> */}
+                <ul
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(2,auto)",
+                  }}
+                >
+                  <div className="contact-item">
+                    <a href="tel:+998998993515">
+                      <p
                         style={{
+                          gap: "20px",
                           display: "flex",
+                          color: "white",
                           alignItems: "center",
-                          marginBottom: "0px",
                         }}
                       >
-                        <i className="fa fa-phone"></i> Phone
-                      </span>{" "}
-                    </p>
-                  </a>
-                </div>
-                <div className="contact-item">
-                  <a href="mailto:diyorbek.britishanalytica@gmail.com">
-                    <p
-                      style={{
-                        gap: "20px",
-                        display: "flex",
-                        color: "white",
-                        alignItems: "center",
-                      }}
-                    >
-                      <span
+                        <span
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            marginBottom: "0px",
+                          }}
+                        >
+                          <i className="fa fa-phone"></i> Phone
+                        </span>{" "}
+                      </p>
+                    </a>
+                  </div>
+                  <div className="contact-item">
+                    <a href="mailto:diyorbek.britishanalytica@gmail.com">
+                      <p
                         style={{
+                          gap: "20px",
                           display: "flex",
+                          color: "white",
                           alignItems: "center",
-                          marginBottom: "0px",
                         }}
                       >
-                        <i className="fa fa-envelope-o"></i> Email
-                      </span>{" "}
-                    </p>
-                  </a>
-                </div>
-                <div className="contact-item">
-                  <a href="https://t.me/MurodovDiyorbek" target="_blank">
-                    <p
-                      style={{
-                        gap: "20px",
-                        display: "flex",
-                        color: "white",
-                        alignItems: "center",
-                      }}
-                    >
-                      <span
+                        <span
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            marginBottom: "0px",
+                          }}
+                        >
+                          <i className="fa fa-envelope-o"></i> Email
+                        </span>{" "}
+                      </p>
+                    </a>
+                  </div>
+                  <div className="contact-item">
+                    <a href="https://t.me/MurodovDiyorbek" target="_blank">
+                      <p
                         style={{
-                          gap: "10px",
+                          gap: "20px",
                           display: "flex",
+                          color: "white",
                           alignItems: "center",
-                          marginBottom: "0px",
                         }}
                       >
-                        <i className="fab fa-telegram"></i> Telegram
-                      </span>
-                    </p>
-                  </a>
-                </div>
-                <div className="contact-item">
-                  <a
-                    style={{ display: "flex", color: "white", width: "100%" }}
-                    href="https://t.me/MurodovDiyorbek"
-                    target="_blank"
-                  >
-                    <p
-                      style={{
-                        width: "100%",
-                        display: "flex",
-                        color: "white",
-                        alignItems: "center",
-                      }}
+                        <span
+                          style={{
+                            gap: "10px",
+                            display: "flex",
+                            alignItems: "center",
+                            marginBottom: "0px",
+                          }}
+                        >
+                          <i className="fab fa-telegram"></i> Telegram
+                        </span>
+                      </p>
+                    </a>
+                  </div>
+                  <div className="contact-item">
+                    <a
+                      style={{ display: "flex", color: "white", width: "100%" }}
+                      href="https://t.me/MurodovDiyorbek"
+                      target="_blank"
                     >
-                      <span
+                      <p
                         style={{
-                          gap: "10px",
+                          width: "100%",
                           display: "flex",
+                          color: "white",
                           alignItems: "center",
-                          marginBottom: "0px",
                         }}
                       >
-                        <i className="fa-solid fa-location-dot"></i> Adress
-                      </span>
-                    </p>
-                  </a>
-                </div>
-              </ul>
+                        <span
+                          style={{
+                            gap: "10px",
+                            display: "flex",
+                            alignItems: "center",
+                            marginBottom: "0px",
+                          }}
+                        >
+                          <i className="fa-solid fa-location-dot"></i> Adress
+                        </span>
+                      </p>
+                    </a>
+                  </div>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

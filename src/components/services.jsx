@@ -19,7 +19,18 @@ export const Services = (props) => {
         <div className="grid">
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="grid-column">
+                <div
+                  key={`${d.name}-${i}`}
+                  style={{
+                    padding: "10px",
+                    minHeight: "10%",
+                    borderRadius: "20px",
+                    backgroundColor: "rgba(255, 255, 255, 0.2)",
+                    border: "2px solid rgba(255, 255, 255, 0.4)",
+                    backdropFilter: "blur(5px)",
+                  }}
+                  className="grid-column"
+                >
                   <div className="icon-display">
                     <i style={{ fontSize: "25px" }} className={d.icon}></i>
                   </div>

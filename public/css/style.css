@@ -325,8 +325,8 @@ header .intro-text {
 }
 
 .grid {
+  gap: 15px;
   display: grid;
-  align-items: center;
   justify-content: space-between;
   grid-template-columns: repeat(2, auto);
 
@@ -558,11 +558,11 @@ i {
 }
 #contact h3 {
   color: #fff;
-  margin-top: 80px;
   margin-bottom: 25px;
   padding-bottom: 20px;
   font-weight: 400;
 }
+
 #contact form {
   padding-top: 20px;
 }
@@ -622,7 +622,6 @@ label {
   color: #777;
 }
 #contact .contact-item {
-  margin: 20px 0;
 }
 
 .contact-item {

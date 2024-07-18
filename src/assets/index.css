@@ -348,3 +348,45 @@ footer .footer-meta span {
 
   color: black !important;
 }
+
+.sertificate-horizontal-rule {
+  width: 10%;
+  height: 5px;
+  margin-left: 0;
+  background: linear-gradient(
+    to right,
+    rgb(99, 114, 255) 0%,
+    rgb(92, 169, 251) 100%
+  );
+
+  margin-bottom: 50px !important;
+
+  @media only screen and (max-width: 576px) {
+    width: 40%;
+  }
+}
+
+.sertificate-horizontal-rules {
+  width: 10%;
+  height: 5px;
+  margin-left: 0;
+  margin-top: 35px;
+  margin-bottom: 0px !important;
+  background-color: white;
+
+  @media only screen and (max-width: 576px) {
+    width: 40%;
+  }
+}
+
+.sertificate-horizontal-rule1 {
+  width: 30%;
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    rgb(99, 114, 255) 0%,
+    rgb(92, 169, 251) 100%
+  );
+
+  margin-bottom: 35px !important;
+}

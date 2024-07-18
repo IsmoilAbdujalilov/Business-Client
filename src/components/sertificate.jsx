@@ -46,6 +46,8 @@ const Sertificate = () => {
         </div>
       </div>
 
+      <hr className="sertificate-horizontal-rule" />
+
       <Swiper
         loop
         modules={[Autoplay, Navigation]}

@@ -1,8 +1,9 @@
 import React from "react";
+import "../assets/index.css";
 import User1 from "../assets/user-1.jpg";
 import User2 from "../assets/user-2.jpg";
 
-export const Team = (props) => {
+export const Team = () => {
   const box = {
     gap: "25px",
     width: "100%",
@@ -16,6 +17,8 @@ export const Team = (props) => {
       <div className="container">
         <div className="col-md-8 col-md-offset-2 section-title">
           <h2>Meet the Team</h2>
+          <hr className="sertificate-horizontal-rule1" />
+
           <p>
             Empowering organizations to achieve sustainable success and maximum
             value through innovative strategic solutions specifically shaped to

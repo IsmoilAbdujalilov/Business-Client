@@ -49,6 +49,8 @@ const Chance = () => {
         <h2 className="chance-title" style={{ margin: "0px" }}>
           Our services
         </h2>
+        <hr className="sertificate-horizontal-rules" />
+
         <div className="chance__rows">
           <div className="chance__column">
             <h2 className="chance__column-title">Express Diagnostic</h2>

@@ -543,8 +543,7 @@ i {
 }
 /* Contact Section */
 #contact {
-  padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  padding: 0px 0 60px;
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {

@@ -428,18 +428,14 @@ body {
   }
 }
 
-.formbold-img {
-  margin-bottom: 45px;
-}
-
 .formbold-form-title {
-  margin-bottom: 30px;
+  color: black !important;
 }
 .formbold-form-title h2 {
   font-weight: 600;
   font-size: 28px;
   line-height: 34px;
-  color: #07074d;
+  color: #07074d !important;
 }
 .formbold-form-title p {
   font-size: 16px;

@@ -1,357 +1,82 @@
-import { useState } from "react";
-import emailjs from "emailjs-com";
 import React from "react";
 import "../assets/index.css";
+import Logo from "../assets/rasm.jpg";
 
-const initialState = {
-  name: "",
-  email: "",
-  message: "",
-};
-export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setState((prevState) => ({ ...prevState, [name]: value }));
-  };
-  const clearState = () => setState({ ...initialState });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(name, email, message);
-
-    {
-      /* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */
-    }
-
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        e.target,
-        "YOUR_PUBLIC_KEY"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+export const Contact = () => {
   return (
-    <div>
-      <div id="contact">
-        <div className="container">
-          <div
-            className="contact__container"
-            style={{
-              width: "100%",
-              padding: "50px",
-              minHeight: "65%",
-              borderRadius: "10px",
-              backgroundColor: "rgba(255, 255, 255, 0.2)",
-              border: "2px solid rgba(255, 255, 255, 0.4)",
-              backdropFilter: "blur(5px)",
-            }}
-          >
-            <div className="col-md-8">
-              <div className="row">
-                <div className="section-title">
-                  <h2>Get In Touch</h2>
-                  <p>
-                    Please fill out the form below to send us an email and we
-                    will get back to you as soon as possible.
-                  </p>
-                </div>
-                <form name="sentMessage" validate onSubmit={handleSubmit}>
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          id="name"
-                          name="name"
-                          className="form-control"
-                          placeholder="Name"
-                          required
-                          onChange={handleChange}
-                        />
-                        <p className="help-block text-danger"></p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="form-group">
-                        <input
-                          type="email"
-                          id="email"
-                          name="email"
-                          className="form-control"
-                          placeholder="Email"
-                          required
-                          onChange={handleChange}
-                        />
-                        <p className="help-block text-danger"></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <textarea
-                      name="message"
-                      id="message"
-                      className="form-control"
-                      rows="4"
-                      placeholder="Message"
-                      required
-                      onChange={handleChange}
-                    ></textarea>
-                    <p className="help-block text-danger"></p>
-                  </div>
-                  <div id="success"></div>
-                  <button type="submit" className="btn btn-custom btn-lg">
-                    Send Message
-                  </button>
-                </form>
-              </div>
-            </div>
-            <div className="col-md-3 col-md-offset-1 contact-info">
-              <div className="contact-item">
-                <h3>Contact Info</h3>
-                {/* <p>
-                <span>
-                  <i className="fa fa-map-marker"></i> Address
-                </span>
-                {props.data.address}
-              </p> */}
-                <ul
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "repeat(2,auto)",
-                  }}
-                >
-                  <div className="contact-item">
-                    <a href="tel:+998998993515">
-                      <p
-                        style={{
-                          gap: "20px",
-                          display: "flex",
-                          color: "white",
-                          alignItems: "center",
-                        }}
-                      >
-                        <span
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            marginBottom: "0px",
-                          }}
-                        >
-                          <i className="fa fa-phone"></i> Phone
-                        </span>{" "}
-                      </p>
-                    </a>
-                  </div>
-                  <div className="contact-item">
-                    <a href="mailto:diyorbek.britishanalytica@gmail.com">
-                      <p
-                        style={{
-                          gap: "20px",
-                          display: "flex",
-                          color: "white",
-                          alignItems: "center",
-                        }}
-                      >
-                        <span
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            marginBottom: "0px",
-                          }}
-                        >
-                          <i className="fa fa-envelope-o"></i> Email
-                        </span>{" "}
-                      </p>
-                    </a>
-                  </div>
-                  <div className="contact-item">
-                    <a href="https://t.me/MurodovDiyorbek" target="_blank">
-                      <p
-                        style={{
-                          gap: "20px",
-                          display: "flex",
-                          color: "white",
-                          alignItems: "center",
-                        }}
-                      >
-                        <span
-                          style={{
-                            gap: "10px",
-                            display: "flex",
-                            alignItems: "center",
-                            marginBottom: "0px",
-                          }}
-                        >
-                          <i className="fab fa-telegram"></i> Telegram
-                        </span>
-                      </p>
-                    </a>
-                  </div>
-                  <div className="contact-item">
-                    <a
-                      style={{ display: "flex", color: "white", width: "100%" }}
-                      href="https://t.me/MurodovDiyorbek"
-                      target="_blank"
-                    >
-                      <p
-                        style={{
-                          width: "100%",
-                          display: "flex",
-                          color: "white",
-                          alignItems: "center",
-                        }}
-                      >
-                        <span
-                          style={{
-                            gap: "10px",
-                            display: "flex",
-                            alignItems: "center",
-                            marginBottom: "0px",
-                          }}
-                        >
-                          <i className="fa-solid fa-location-dot"></i> Adress
-                        </span>
-                      </p>
-                    </a>
-                  </div>
-                </ul>
-              </div>
-              <div className="contact-item">
-                <h3>Contact Info</h3>
-                {/* <p>
-                <span>
-                  <i className="fa fa-map-marker"></i> Address
-                </span>
-                {props.data.address}
-              </p> */}
-                <ul
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "repeat(2,auto)",
-                  }}
-                >
-                  <div className="contact-item">
-                    <a href="tel:+998998993515">
-                      <p
-                        style={{
-                          gap: "20px",
-                          display: "flex",
-                          color: "white",
-                          alignItems: "center",
-                        }}
-                      >
-                        <span
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            marginBottom: "0px",
-                          }}
-                        >
-                          <i className="fa fa-phone"></i> Phone
-                        </span>{" "}
-                      </p>
-                    </a>
-                  </div>
-                  <div className="contact-item">
-                    <a href="mailto:diyorbek.britishanalytica@gmail.com">
-                      <p
-                        style={{
-                          gap: "20px",
-                          display: "flex",
-                          color: "white",
-                          alignItems: "center",
-                        }}
-                      >
-                        <span
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            marginBottom: "0px",
-                          }}
-                        >
-                          <i className="fa fa-envelope-o"></i> Email
-                        </span>{" "}
-                      </p>
-                    </a>
-                  </div>
-                  <div className="contact-item">
-                    <a href="https://t.me/MurodovDiyorbek" target="_blank">
-                      <p
-                        style={{
-                          gap: "20px",
-                          display: "flex",
-                          color: "white",
-                          alignItems: "center",
-                        }}
-                      >
-                        <span
-                          style={{
-                            gap: "10px",
-                            display: "flex",
-                            alignItems: "center",
-                            marginBottom: "0px",
-                          }}
-                        >
-                          <i className="fab fa-telegram"></i> Telegram
-                        </span>
-                      </p>
-                    </a>
-                  </div>
-                  <div className="contact-item">
-                    <a
-                      style={{ display: "flex", color: "white", width: "100%" }}
-                      href="https://t.me/MurodovDiyorbek"
-                      target="_blank"
-                    >
-                      <p
-                        style={{
-                          width: "100%",
-                          display: "flex",
-                          color: "white",
-                          alignItems: "center",
-                        }}
-                      >
-                        <span
-                          style={{
-                            gap: "10px",
-                            display: "flex",
-                            alignItems: "center",
-                            marginBottom: "0px",
-                          }}
-                        >
-                          <i className="fa-solid fa-location-dot"></i> Adress
-                        </span>
-                      </p>
-                    </a>
-                  </div>
-                </ul>
-              </div>
-            </div>
+    <footer>
+      <div className="footer-container">
+        <div className="footer-container-column footer-container-brand">
+          <img className="footer-logo" src={Logo} alt="British Analytic" />
+          <h2 className="phone-number">+998998993515</h2>
+          <div className="footer-socials">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://t.me/MurodovDiyorbek"
+            >
+              <i className="fa-brands fa-telegram"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <i className="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+        <div className="footer-container-column footer-container-courses">
+          <h3>
+            <small>Our Services</small>
+          </h3>
+
+          <p>
+            <a href="/uz/data-analytics/course/">EXPRESS DIAGNOSTIC</a>
+          </p>
+
+          <p>
+            <a href="/uz/data-engineering/course/">PRODUCT SERVICES</a>
+          </p>
+        </div>
+        <div className="footer-container-column footer-container-contacts">
+          <h3>
+            <small>Contact Us</small>
+          </h3>
+          <div className="column-section">
+            <i className="fa-solid fa-location-dot"></i>
+            <p>
+              <a href="#">Tirsakobod 4/194a, Tashkent, Uzbekistan</a>
+            </p>
+          </div>
+          <div className="column-section">
+            <i className="fa-solid fa-envelope"></i>
+            <p>
+              <a href="mailto:diyorbek.britishanalytica@gmail.com">
+                diyorbek.britishanalytica@gmail.com
+              </a>
+            </p>
+          </div>
+          <div className="column-section">
+            <i className="fa-solid fa-phone"></i>
+            <p>
+              <a href="tel:+998998993515">+998998993515</a>
+            </p>
           </div>
         </div>
       </div>
-      {/* <div id="footer">
-        <div className="container text-center">
-          <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
-          </p>
-        </div>
-      </div> */}
-    </div>
+      <div className="footer-meta">
+        <p>© {new Date().getFullYear()} BRITISH ANALYTICA</p>
+        <span>Barcha huquqlar himoyalangan</span>
+      </div>
+    </footer>
   );
 };

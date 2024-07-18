@@ -1,10 +1,46 @@
 import "../assets/index.css";
+import { useState } from "react";
 import File1 from "../assets/file-1.pdf";
 import File2 from "../assets/file-2.pdf";
 
 const Chance = () => {
+  const [file, setFile] = useState(null);
+  const [isOpenModal, setIsOpenModal] = useState(true);
+
+  const renderFile = (number) => {
+    setIsOpenModal((prevState) => !prevState);
+    if (number === 1) {
+      setFile(File1);
+    }
+    if (number === 2) {
+      setFile(File2);
+    }
+  };
+
   return (
     <div className="container">
+      <div id="privacy-viewer" className={isOpenModal && "hide-privacy-viewer"}>
+        <div className="cover"></div>
+        <div className="content">
+          <div className="content-text">
+            <i
+              className="fa-solid fa-x"
+              onClick={() => setIsOpenModal((prevState) => !prevState)}
+            ></i>
+            <p>
+              Eslatma!
+              <br />
+            </p>
+            <iframe
+              src={file}
+              width="100%"
+              height={500}
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
       <section
         className="chance"
         id="services"
@@ -31,9 +67,9 @@ const Chance = () => {
               recommendations.
             </p>
             <div className="chance__price">
-              <a href={File1} target="_blank">
+              <span style={{ cursor: "pointer" }} onClick={() => renderFile(1)}>
                 Read more
-              </a>
+              </span>
             </div>
           </div>
           <div className="chance__column">
@@ -46,9 +82,9 @@ const Chance = () => {
               ta'minlaydi.
             </p>
             <div className="chance__price">
-              <a href={File2} target="_blank">
+              <span style={{ cursor: "pointer" }} onClick={() => renderFile(2)}>
                 Read more
-              </a>
+              </span>
             </div>
           </div>
         </div>

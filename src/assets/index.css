@@ -282,3 +282,69 @@ footer .footer-meta span {
     margin-bottom: 25px;
   }
 }
+
+#privacy-viewer {
+  position: fixed;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: visible;
+  opacity: 1;
+}
+
+.hide-privacy-viewer {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+#privacy-viewer .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  opacity: 0.6;
+}
+#root #privacy-viewer .content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#privacy-viewer .content .content-text {
+  position: relative;
+  width: 40%;
+  padding: 2vw;
+  background: white;
+  border-radius: 1.5vw;
+
+  @media only screen and (max-width: 768px) {
+    width: 70% !important;
+  }
+  @media only screen and (max-width: 576px) {
+    width: 90% !important;
+  }
+}
+#root #privacy-viewer .content .content-text p {
+  margin: 0;
+  line-height: 1.5vw;
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+#root #privacy-viewer .content .content-text i {
+  position: absolute;
+  top: 1.5vw;
+  right: 1.5vw;
+  opacity: 0.5;
+  cursor: pointer;
+
+  color: black !important;
+}

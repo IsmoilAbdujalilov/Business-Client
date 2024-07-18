@@ -215,6 +215,36 @@ footer .footer-meta {
   }
 }
 
+.navigation {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  border: 1px solid rgb(92, 169, 251);
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.05) 10px 10px 10px;
+  background: linear-gradient(
+    to right,
+    rgb(99, 114, 255) 0%,
+    rgb(92, 169, 251) 100%
+  );
+  color: white;
+
+  @media only screen and (max-width: 576px) {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+  }
+}
+
+.sertificate-heading {
+  font-size: 35px;
+
+  @media only screen and (max-width: 576px) {
+    font-size: 20px;
+    margin-bottom: 0px !important;
+  }
+}
+
 footer .footer-meta p {
   margin: 0;
 }

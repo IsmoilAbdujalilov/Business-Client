@@ -1,5 +1,6 @@
 import React from "react";
-import { Autoplay } from "swiper/modules";
+import "../assets/index.css";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Sertificate1 from "../assets/sertificate-1.png";
 import Sertificate5 from "../assets/sertificate-5.png";
@@ -26,9 +27,32 @@ const Sertificate = () => {
         padding: "40px",
       }}
     >
-      <h2 style={{ marginBottom: "50px" }}>Our sertificates</h2>
+      <div
+        style={{
+          display: "flex",
+          marginBottom: "15px",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <h2 className="sertificate-heading">Our sertificates</h2>
+        <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
+          <button className="navigation-left navigation" type="button">
+            &#8592;
+          </button>
+          <button className="navigation-right navigation" type="button">
+            &#8594;
+          </button>
+        </div>
+      </div>
+
       <Swiper
-        modules={[Autoplay]}
+        loop
+        modules={[Autoplay, Navigation]}
+        navigation={{
+          prevEl: ".navigation-left",
+          nextEl: ".navigation-right",
+        }}
         autoplay={{
           delay: 2500,
         }}

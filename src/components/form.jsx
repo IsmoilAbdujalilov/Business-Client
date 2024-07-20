@@ -1,8 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Form = () => {
+  const [isOpen, setIsOpen] = useState(true);
+
   return (
     <div className="container" id="contact">
+      <div id="privacy-viewer" className={isOpen && "hide-privacy-viewer"}>
+        <div className="cover"></div>
+        <div className="content">
+          <div className="content-text">
+            <i
+              className="fa-solid fa-x"
+              onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}
+            ></i>
+            <p style={{ color: "black", marginBottom: "15px" }}>
+              Reminder!
+              <br />
+            </p>
+            <p style={{ color: "black" }}>
+              "On Personal Information" of the Republic of Uzbekistan According
+              to the Law No. DRU-547 of 02.07.2019 you will be asked to consent
+              to data processing. From your side in case of consent to the
+              processing of your personal data freely available or subject to
+              confidentiality information about a person whose requirements do
+              not apply (about a person to publicly available sources of
+              information written consent of the subject, including electronic
+              documents with his surname, first name, patronymic, year and place
+              of birth, address, subscriber number, information about profession
+              and subject information about another person to be informed by can
+              be entered.) information that can be used by everybody, may be
+              disclosed in our program. Any confidential information entered by
+              you will not be distributed third parties!
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="formbold-main-wrapper">
         <div className="formbold-form-wrapper">
           <form>
@@ -101,7 +133,7 @@ const Form = () => {
             <label
               style={{ margin: "25px 0px" }}
               for="supportCheckbox"
-              class="formbold-checkbox-label"
+              class="formbold-checkbox-label check"
             >
               <div class="formbold-relative">
                 <input
@@ -126,10 +158,21 @@ const Form = () => {
                   </span>
                 </div>
               </div>
+
+              <p>
+                By submitting an application, you agree to the processing of
+                your personal data in accordance with the{" "}
+                <span
+                  style={{ color: "blue" }}
+                  onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}
+                >
+                  “Privacy Policy”
+                </span>
+              </p>
             </label>
 
             <div className="buttons">
-              <button className="formbold-btn">Send</button>
+              <button className="formbold-btn">Send Application</button>
             </div>
           </form>
         </div>

@@ -13,6 +13,7 @@ import JsonData from "../data/data.json";
 import SmoothScroll from "smooth-scroll";
 import Chance from "../components/chance";
 import Form from "../components/form";
+import FaqQuestion from "../components/faqQuestion";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -37,6 +38,7 @@ const Home = () => {
       <Chance />
       <Team data={landingPageData.Team} />
       <Form />
+      <FaqQuestion />
     </div>
   );
 };

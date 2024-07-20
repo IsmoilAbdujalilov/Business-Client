@@ -13,9 +13,9 @@ export const Team = () => {
   };
 
   return (
-    <div id="team" className="text-center">
-      <div className="container">
-        <div className="col-md-8 col-md-offset-2 section-title">
+    <div className="container">
+      <div id="team" className="text-center">
+        <div className="col-md-12 section-title">
           <h2>OUR TEAM</h2>
           <hr className="sertificate-horizontal-rule1" />
 

@@ -384,6 +384,7 @@ footer .footer-meta span {
 .sertificate-horizontal-rule1 {
   width: 30%;
   height: 5px;
+  margin: 0 auto;
   background: linear-gradient(
     to right,
     rgb(99, 114, 255) 0%,
@@ -558,4 +559,94 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(225, 225, 225);
+}
+
+.questions {
+  padding: 25px 0px;
+  margin-bottom: 50px;
+}
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgb(160, 160, 160);
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.questions-container {
+  overflow: hidden;
+}
+
+.question-container {
+  border-radius: 5px;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  margin: 5px;
+}
+
+.question {
+  background-color: rgb(245, 245, 245);
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer {
+  padding: 10px;
+  display: none;
+}
+
+.question p {
+  font-size: 20px;
+}
+
+.question-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.show-answer {
+  display: none;
+}
+
+.hide-answer {
+  display: inline-block;
+}
+
+.active .show-answer {
+  display: inline-block;
+}
+
+.active .hide-answer {
+  display: none;
+}
+
+.active .answer {
+  display: block;
+}
+
+.fa-angle-down,
+.fa-angle-up {
+  color: black !important;
 }

@@ -81,10 +81,12 @@ footer {
 }
 
 footer .footer-container {
-  padding: 3vw 3.5vw;
-  border-radius: 2vw;
+  padding: 2vw 2vw;
+  border-radius: 1vw;
   background: white;
   display: flex;
+  justify-content: space-between;
+  width: 100%;
   color: white;
 
   @media only screen and (max-width: 1155px) {
@@ -140,7 +142,7 @@ footer .footer-socials a img {
 
 footer .footer-container-brand {
   width: 35%;
-  margin-right: 7vw;
+  margin-right: 3.5vw;
 }
 
 footer .footer-container-brand h2 {
@@ -152,11 +154,11 @@ footer .footer-container-brand img {
   width: 100%;
 }
 footer .footer-container-courses {
-  margin-right: 7vw;
+  margin-right: 3.5vw;
 }
 footer .footer-container-column h3 {
   margin: 0;
-
+  white-space: nowrap;
   @media only screen and (max-width: 576px) {
     margin-bottom: 10px;
   }
@@ -173,8 +175,6 @@ footer .footer-container-column p {
   text-align: left !important;
 }
 footer .footer-container-contacts {
-  margin-left: 7vw;
-
   @media only screen and (max-width: 1155px) {
     margin-left: 0px;
   }

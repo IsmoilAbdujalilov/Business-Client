@@ -35,13 +35,14 @@ export const Team = () => {
                   <p>+15 years</p>
                 </div>
                 <h4>Diyorbek Murodov</h4>
-                <p>Bachelor of International Economic Relations, TIU</p>
-                <p>PMP-30, Rank 1, Japan International Cooperation Agency</p>
+                <p>Bachelor of International Economic Relations</p>
+                <p>
+                  TIU PMP-30, Rank 1, Japan International Cooperation Agency
+                </p>
                 <p>Keiei-Juku, Strategic Development of Business Executives</p>
                 <p>
                   +15 years’ experience of consulting services in Uzbekistan
                 </p>
-                <a href="">Read more</a>
               </div>
             </div>
           </div>
@@ -64,8 +65,6 @@ export const Team = () => {
                   +20 years’ experience of working with 14 different
                   organisations across the UK and Asia
                 </p>
-
-                <a href="">Read more</a>
               </div>
             </div>
           </div>

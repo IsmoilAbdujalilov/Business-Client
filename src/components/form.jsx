@@ -13,8 +13,7 @@ const Form = () => {
             <div className="formbold-input-flex">
               <div>
                 <label for="firstname" className="formbold-form-label">
-                  First name <span style={{ color: "red" }}>&#9733; </span>
-                  Majburiy
+                  First name{" "}
                 </label>
                 <input
                   required
@@ -23,6 +22,16 @@ const Form = () => {
                   id="firstname"
                   className="formbold-form-input"
                 />
+                <span
+                  style={{
+                    color: "red",
+                    fontSize: "12px",
+                    display: "block",
+                    marginTop: "5px",
+                  }}
+                >
+                  &#9733; Important
+                </span>
               </div>
               <div>
                 <label for="lastname" className="formbold-form-label">
@@ -54,9 +63,9 @@ const Form = () => {
               <div>
                 <label for="phone" className="formbold-form-label">
                   {" "}
-                  Phone number <span style={{ color: "red" }}>&#9733; </span>
-                  Majburiy
+                  Phone number{" "}
                 </label>
+
                 <input
                   required
                   type="text"
@@ -64,14 +73,29 @@ const Form = () => {
                   id="phone"
                   className="formbold-form-input"
                 />
+                <span
+                  style={{
+                    color: "red",
+                    fontSize: "12px",
+                    marginTop: "5px",
+                    display: "block",
+                  }}
+                >
+                  &#9733; Important
+                </span>
               </div>
             </div>
             <div>
-              <label for="phone" className="formbold-form-label">
+              <label for="text" className="formbold-form-label">
                 {" "}
                 Text
               </label>
-              <textarea rows={5} type="text" className="formbold-form-input" />
+              <textarea
+                rows={5}
+                type="text"
+                id="text"
+                className="formbold-form-input"
+              />
             </div>
 
             <label

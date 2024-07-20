@@ -76,199 +76,179 @@ const Sertificate = () => {
         slidesPerView={4}
       >
         <SwiperSlide>
-          <img
-            height={400}
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-            }}
-            src={Sertificate1}
-            alt="sertificate"
-          />
-        </SwiperSlide>
-        {/* <SwiperSlide>
-          <img
-            height={400}
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-            }}
-            width={300}
-            src={Sertificate2}
-            alt="sertificate"
-          />
-        </SwiperSlide> */}
-        {/* <SwiperSlide>
-          <img
-            height={400}
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-            }}
-            width={300}
-            src={Sertificate4}
-            alt="sertificate"
-          />
-        </SwiperSlide> */}
-        <SwiperSlide>
-          <img
-            height={400}
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-            }}
-            width={300}
-            src={Sertificate5}
-            alt="sertificate"
-          />
+          <a href={Sertificate1} target="_blank">
+            <img
+              height={400}
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                objectPosition: "center center",
+              }}
+              src={Sertificate1}
+              alt="sertificate"
+            />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            height={400}
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-            }}
-            width={300}
-            src={Sertificate6}
-            alt="sertificate"
-          />
+          <a target="_blank" href={Sertificate5}>
+            <img
+              height={400}
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                objectPosition: "center center",
+              }}
+              width={300}
+              src={Sertificate5}
+              alt="sertificate"
+            />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            height={400}
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-            }}
-            width={300}
-            src={Sertificate7}
-            alt="sertificate"
-          />
+          <a target="_blank" href={Sertificate6}>
+            <img
+              height={400}
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                objectPosition: "center center",
+              }}
+              width={300}
+              src={Sertificate6}
+              alt="sertificate"
+            />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            height={400}
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-            }}
-            width={300}
-            src={Sertificate8}
-            alt="sertificate"
-          />
+          <a target="_blank" href={Sertificate7}>
+            <img
+              height={400}
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                objectPosition: "center center",
+              }}
+              width={300}
+              src={Sertificate7}
+              alt="sertificate"
+            />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            height={400}
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-            }}
-            width={300}
-            src={Sertificate9}
-            alt="sertificate"
-          />
+          <a target="_blank" href={Sertificate8}>
+            <img
+              height={400}
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                objectPosition: "center center",
+              }}
+              width={300}
+              src={Sertificate8}
+              alt="sertificate"
+            />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            height={400}
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-            }}
-            width={300}
-            src={Sertificate10}
-            alt="sertificate"
-          />
+          <a href={Sertificate9} target="_blank">
+            <img
+              height={400}
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                objectPosition: "center center",
+              }}
+              width={300}
+              src={Sertificate9}
+              alt="sertificate"
+            />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            height={400}
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-            }}
-            width={300}
-            src={Sertificate11}
-            alt="sertificate"
-          />
-        </SwiperSlide>
-        {/* <SwiperSlide>
-          <img
-            height={400}
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-            }}
-            width={300}
-            src={Sertificate12}
-            alt="sertificate"
-          />
-        </SwiperSlide> */}
-        <SwiperSlide>
-          <img
-            height={400}
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-            }}
-            width={300}
-            src={Sertificate13}
-            alt="sertificate"
-          />
+          <a href={Sertificate10} target="_blank">
+            <img
+              height={400}
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                objectPosition: "center center",
+              }}
+              width={300}
+              src={Sertificate10}
+              alt="sertificate"
+            />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            height={400}
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-            }}
-            width={300}
-            src={Sertificate14}
-            alt="sertificate"
-          />
+          <a href={Sertificate11} target="_blank">
+            <img
+              height={400}
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                objectPosition: "center center",
+              }}
+              width={300}
+              src={Sertificate11}
+              alt="sertificate"
+            />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            height={400}
-            style={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-              objectPosition: "center center",
-            }}
-            width={300}
-            src={Sertificate15}
-            alt="sertificate"
-          />
+          <a href={Sertificate13} target="_blank">
+            <img
+              height={400}
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                objectPosition: "center center",
+              }}
+              width={300}
+              src={Sertificate13}
+              alt="sertificate"
+            />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a target="_blank" href={Sertificate14}>
+            <img
+              height={400}
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                objectPosition: "center center",
+              }}
+              width={300}
+              src={Sertificate14}
+              alt="sertificate"
+            />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href={Sertificate15} target="_blank">
+            <img
+              height={400}
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                objectPosition: "center center",
+              }}
+              width={300}
+              src={Sertificate15}
+              alt="sertificate"
+            />
+          </a>
         </SwiperSlide>
       </Swiper>
     </section>

@@ -16,7 +16,7 @@ export const Team = () => {
     <div id="team" className="text-center">
       <div className="container">
         <div className="col-md-8 col-md-offset-2 section-title">
-          <h2>Meet the Team</h2>
+          <h2>OUR TEAM</h2>
           <hr className="sertificate-horizontal-rule1" />
 
           <p>

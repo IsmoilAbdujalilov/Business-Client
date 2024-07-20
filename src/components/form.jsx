@@ -7,15 +7,17 @@ const Form = () => {
         <div className="formbold-form-wrapper">
           <form>
             <div className="formbold-form-title">
-              <h2 className="">What questions do you have?</h2>
+              <h2 className="">CONTACT US</h2>
             </div>
 
             <div className="formbold-input-flex">
               <div>
                 <label for="firstname" className="formbold-form-label">
-                  First name
+                  First name <span style={{ color: "red" }}>&#9733; </span>
+                  Majburiy
                 </label>
                 <input
+                  required
                   type="text"
                   name="firstname"
                   id="firstname"
@@ -52,9 +54,11 @@ const Form = () => {
               <div>
                 <label for="phone" className="formbold-form-label">
                   {" "}
-                  Phone number{" "}
+                  Phone number <span style={{ color: "red" }}>&#9733; </span>
+                  Majburiy
                 </label>
                 <input
+                  required
                   type="text"
                   name="phone"
                   id="phone"
@@ -98,11 +102,9 @@ const Form = () => {
                   </span>
                 </div>
               </div>
-              By submitting an application, you agree to the processing of your
-              personal data in accordance with the "Privacy Policy"
             </label>
 
-            <div className="buttons" style={{ marginTop: "25px" }}>
+            <div className="buttons">
               <button className="formbold-btn">Send</button>
             </div>
           </form>

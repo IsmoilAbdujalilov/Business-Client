@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/index.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Sertificate1 from "../assets/sertificate-1.png";
@@ -15,8 +15,36 @@ import Sertificate14 from "../assets/sertificate-14.png";
 import Sertificate15 from "../assets/sertificate-15.png";
 
 const Sertificate = () => {
+  const [file, setFile] = useState(null);
+  const [isOpenModal, setIsOpenModal] = useState(true);
+
+  const openModal = (file) => {
+    setIsOpenModal((prevState) => !prevState);
+    setFile(file);
+  };
+
   return (
     <div className="container">
+      <div id="privacy-viewer" className={isOpenModal && "hide-privacy-viewer"}>
+        <div className="cover"></div>
+        <div className="content">
+          <div className="content-text">
+            <i
+              className="fa-solid fa-x"
+              onClick={() => setIsOpenModal((prevState) => !prevState)}
+            ></i>
+            <p>
+              Eslatma!
+              <br />
+            </p>
+            <img
+              src={file}
+              alt="img"
+              style={{ width: "100%", height: "450px" }}
+            />
+          </div>
+        </div>
+      </div>
       <section
         id="sertificate"
         style={{
@@ -76,179 +104,201 @@ const Sertificate = () => {
           slidesPerView={4}
         >
           <SwiperSlide>
-            <a href={Sertificate1}>
+            <span
+              style={{ cursor: "pointer" }}
+              onClick={() => openModal(Sertificate1)}
+            >
               <img
                 height={400}
                 style={{
                   height: "100%",
                   width: "100%",
-                  objectFit: "cover",
                   objectPosition: "center center",
                 }}
                 src={Sertificate1}
                 alt="sertificate"
               />
-            </a>
+            </span>
           </SwiperSlide>
           <SwiperSlide>
-            <a href={Sertificate5}>
+            <span
+              style={{ cursor: "pointer" }}
+              onClick={() => openModal(Sertificate5)}
+            >
               <img
                 height={400}
                 style={{
                   height: "100%",
                   width: "100%",
-                  objectFit: "cover",
                   objectPosition: "center center",
                 }}
                 width={300}
                 src={Sertificate5}
                 alt="sertificate"
               />
-            </a>
+            </span>
           </SwiperSlide>
           <SwiperSlide>
-            <a target="_blank" href={Sertificate6}>
+            <span
+              style={{ cursor: "pointer" }}
+              onClick={() => openModal(Sertificate6)}
+            >
               <img
                 height={400}
                 style={{
                   height: "100%",
                   width: "100%",
-                  objectFit: "cover",
                   objectPosition: "center center",
                 }}
                 width={300}
                 src={Sertificate6}
                 alt="sertificate"
               />
-            </a>
+            </span>
           </SwiperSlide>
           <SwiperSlide>
-            <a target="_blank" href={Sertificate7}>
+            <span
+              style={{ cursor: "pointer" }}
+              onClick={() => openModal(Sertificate7)}
+            >
               <img
                 height={400}
                 style={{
                   height: "100%",
                   width: "100%",
-                  objectFit: "cover",
                   objectPosition: "center center",
                 }}
                 width={300}
                 src={Sertificate7}
                 alt="sertificate"
               />
-            </a>
+            </span>
           </SwiperSlide>
           <SwiperSlide>
-            <a target="_blank" href={Sertificate8}>
+            <span
+              style={{ cursor: "pointer" }}
+              onClick={() => openModal(Sertificate8)}
+            >
               <img
                 height={400}
                 style={{
                   height: "100%",
                   width: "100%",
-                  objectFit: "cover",
                   objectPosition: "center center",
                 }}
                 width={300}
                 src={Sertificate8}
                 alt="sertificate"
               />
-            </a>
+            </span>
           </SwiperSlide>
           <SwiperSlide>
-            <a href={Sertificate9} target="_blank">
+            <span
+              style={{ cursor: "pointer" }}
+              onClick={() => openModal(Sertificate9)}
+            >
               <img
                 height={400}
                 style={{
                   height: "100%",
                   width: "100%",
-                  objectFit: "cover",
                   objectPosition: "center center",
                 }}
                 width={300}
                 src={Sertificate9}
                 alt="sertificate"
               />
-            </a>
+            </span>
           </SwiperSlide>
           <SwiperSlide>
-            <a href={Sertificate10} target="_blank">
+            <span
+              style={{ cursor: "pointer" }}
+              onClick={() => openModal(Sertificate10)}
+            >
               <img
                 height={400}
                 style={{
                   height: "100%",
                   width: "100%",
-                  objectFit: "cover",
                   objectPosition: "center center",
                 }}
                 width={300}
                 src={Sertificate10}
                 alt="sertificate"
               />
-            </a>
+            </span>
           </SwiperSlide>
           <SwiperSlide>
-            <a href={Sertificate11} target="_blank">
+            <span
+              style={{ cursor: "pointer" }}
+              onClick={() => openModal(Sertificate11)}
+            >
               <img
                 height={400}
                 style={{
                   height: "100%",
                   width: "100%",
-                  objectFit: "cover",
                   objectPosition: "center center",
                 }}
                 width={300}
                 src={Sertificate11}
                 alt="sertificate"
               />
-            </a>
+            </span>
           </SwiperSlide>
           <SwiperSlide>
-            <a href={Sertificate13} target="_blank">
+            <span
+              style={{ cursor: "pointer" }}
+              onClick={() => openModal(Sertificate13)}
+            >
               <img
                 height={400}
                 style={{
                   height: "100%",
                   width: "100%",
-                  objectFit: "cover",
                   objectPosition: "center center",
                 }}
                 width={300}
                 src={Sertificate13}
                 alt="sertificate"
               />
-            </a>
+            </span>
           </SwiperSlide>
           <SwiperSlide>
-            <a target="_blank" href={Sertificate14}>
+            <span
+              style={{ cursor: "pointer" }}
+              onClick={() => openModal(Sertificate14)}
+            >
               <img
                 height={400}
                 style={{
                   height: "100%",
                   width: "100%",
-                  objectFit: "cover",
                   objectPosition: "center center",
                 }}
                 width={300}
                 src={Sertificate14}
                 alt="sertificate"
               />
-            </a>
+            </span>
           </SwiperSlide>
           <SwiperSlide>
-            <a href={Sertificate15} target="_blank">
+            <span
+              style={{ cursor: "pointer" }}
+              onClick={() => openModal(Sertificate15)}
+            >
               <img
                 height={400}
                 style={{
                   height: "100%",
                   width: "100%",
-                  objectFit: "cover",
                   objectPosition: "center center",
                 }}
                 width={300}
                 src={Sertificate15}
                 alt="sertificate"
               />
-            </a>
+            </span>
           </SwiperSlide>
         </Swiper>
       </section>

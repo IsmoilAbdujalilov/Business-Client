@@ -135,6 +135,7 @@ footer .footer-socials a {
     justify-content: space-between;
   }
 }
+
 footer .footer-socials a img {
   width: 1.2vw;
   height: 1.2vw;
@@ -419,12 +420,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 50px;
 }
 
 .formbold-form-wrapper {
   width: 100%;
-  background: white;
   padding: 40px;
+  background: white;
+  border-radius: 20px;
 
   @media only screen and (max-width: 576px) {
     padding: 10px;

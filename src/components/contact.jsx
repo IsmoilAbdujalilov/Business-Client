@@ -76,7 +76,7 @@ export const Contact = () => {
         </div>
         <div className="footer-meta">
           <p>© {new Date().getFullYear()} BRITISH ANALYTICA</p>
-          <span>Barcha huquqlar himoyalangan</span>
+          <span>All rights reserved</span>
         </div>
       </div>
     </footer>

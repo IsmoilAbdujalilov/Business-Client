@@ -35,10 +35,8 @@ export const Team = () => {
                   <p>+15 years</p>
                 </div>
                 <h4>Diyorbek Murodov</h4>
-                <p>Bachelor of International Economic Relations</p>
-                <p>
-                  TIU PMP-30, Rank 1, Japan International Cooperation Agency
-                </p>
+                <p>Bachelor of International Economic Relations TIU </p>
+                <p>PMP-30, Rank 1, Japan International Cooperation Agency</p>
                 <p>Keiei-Juku, Strategic Development of Business Executives</p>
                 <p>
                   +15 years’ experience of consulting services in Uzbekistan
@@ -58,9 +56,10 @@ export const Team = () => {
                 <p>MBA from Neoma Business School, Reims, France</p>
                 <p>
                   M.Sc. Strategic Project Management from Hariot-Watt
-                  University, Edinburgh, UK; Politecnico di Milano, Italy; Umeå
-                  University, Sweden.
+                  University, Edinburgh, UK;
                 </p>
+                <p>Politecnico di Milano, Italy;</p>
+                <p>Umeå University, Sweden.</p>
                 <p>
                   +20 years’ experience of working with 14 different
                   organisations across the UK and Asia

@@ -35,7 +35,7 @@ export const Contact = () => {
               </a>
             </div>
           </div>
-          <div className="footer-container-column footer-container-courses">
+          {/* <div className="footer-container-column footer-container-courses">
             <h3>
               <small>Our Services</small>
             </h3>
@@ -47,7 +47,7 @@ export const Contact = () => {
             <p>
               <a href="/uz/data-engineering/course/">PRODUCT SERVICES</a>
             </p>
-          </div>
+          </div> */}
           <div className="footer-container-column footer-container-contacts">
             <h3>
               <small>Contact Us</small>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 .chance {
   padding: 50px 0px;
 
@@ -269,6 +271,10 @@ footer .footer-meta span {
   font-size: 20px;
 }
 
+.phone-number {
+  font-family: "Poppins", sans-serif !important;
+}
+
 @media only screen and (max-width: 576px) {
   .phone-number {
     display: none;
@@ -394,8 +400,6 @@ footer .footer-meta span {
 
   margin-bottom: 35px !important;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 body {
   font-family: "Inter", sans-serif;

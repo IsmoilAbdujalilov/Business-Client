@@ -9,7 +9,7 @@ export const Contact = () => {
         <div className="footer-container">
           <div className="footer-container-column footer-container-brand">
             <img className="footer-logo" src={Logo} alt="British Analytic" />
-            <h2 className="phone-number">+998998993515</h2>
+            {/* <h2 className="phone-number">+998998993515</h2> */}
             <div className="footer-socials">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-linkedin-in"></i>

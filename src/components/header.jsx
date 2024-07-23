@@ -27,7 +27,7 @@ export const Header = (props) => {
                   href="#contact"
                   className="btn btn-custom btn-lg page-scroll"
                 >
-                  Book a consultance
+                  Book a consultation
                 </a>{" "}
               </div>
             </div>

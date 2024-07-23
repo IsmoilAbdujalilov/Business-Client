@@ -162,10 +162,7 @@ const Chance = () => {
               className="fa-solid fa-x"
               onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}
             ></i>
-            <p style={{ color: "black", marginBottom: "15px" }}>
-              Reminder!
-              <br />
-            </p>
+            <br />
             <p style={{ color: "black" }}>{text}</p>
           </div>
         </div>

@@ -14,10 +14,7 @@ const Form = () => {
                 className="fa-solid fa-x"
                 onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}
               ></i>
-              <p style={{ color: "black", marginBottom: "15px" }}>
-                Reminder!
-                <br />
-              </p>
+              <br />
               <p style={{ color: "black" }}>
                 "On Personal Information" of the Republic of Uzbekistan
                 According to the Law No. DRU-547 of 02.07.2019 you will be asked

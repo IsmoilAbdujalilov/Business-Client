@@ -46,9 +46,8 @@ export const About = (props) => {
                     </li>
                     <li>
                       Bespoke Solutions: British Analytica believes in
-                      customized solutions. They will develop a plan that دقیقا
-                      (daqīqa) addresses your unique challenges and
-                      opportunities.
+                      customized solutions. They will develop a plan that
+                      addresses your unique challenges and opportunities.
                     </li>
                     <li>
                       Proven Track Record: With a proven track record of

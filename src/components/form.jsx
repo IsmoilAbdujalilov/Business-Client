@@ -171,7 +171,7 @@ const Form = () => {
               </label>
 
               <div className="buttons">
-                <button className="formbold-btn">Send Application</button>
+                <button className="formbold-btn">Book a consultation</button>
               </div>
             </form>
           </div>

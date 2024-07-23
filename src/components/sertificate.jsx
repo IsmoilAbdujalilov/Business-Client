@@ -33,14 +33,12 @@ const Sertificate = () => {
               className="fa-solid fa-x"
               onClick={() => setIsOpenModal((prevState) => !prevState)}
             ></i>
-            <p>
-              Eslatma!
-              <br />
-            </p>
+            <br />
             <img
               src={file}
               alt="img"
-              style={{ width: "100%", height: "450px" }}
+              className="responsive-image"
+              style={{ width: "100%", height: "650px" }}
             />
           </div>
         </div>

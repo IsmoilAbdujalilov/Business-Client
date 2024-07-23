@@ -70,6 +70,13 @@ hr {
   margin-bottom: 20px;
   border: 0;
 }
+
+@media only screen and (max-width: 576px) {
+  .responsive-image {
+    height: 450px !important;
+  }
+}
+
 /* Navigation */
 #menu {
   padding: 15px;

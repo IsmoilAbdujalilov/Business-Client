@@ -3,23 +3,25 @@ const FAQs = () => {
   const [faqItems, setFaqItems] = useState([
     {
       id: 1,
-      question: "What is HTML?",
+      question: "What are British Analytica's fees?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ut esse pariatur fugiat tenetur dolores, mollitia qui! Quisquam, dolorem consequuntur nesciunt omnis architecto magni voluptatum reprehenderit. Officiis minima reprehenderit dolores!",
+        "British Analytica's fees are competitive and depend on the specific scope of the project. The company offers free consultations to discuss your needs and provide a customized quote.",
       isOpen: false,
     },
     {
       id: 2,
-      question: "What is CSS?",
+      question:
+        "What is British Analytica's approach to client confidentiality?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ut esse pariatur fugiat tenetur dolores, mollitia qui! Quisquam, dolorem consequuntur nesciunt omnis architecto magni voluptatum reprehenderit. Officiis minima reprehenderit dolores!",
+        "British Analytica takes client confidentiality very seriously. The company has strict policies in place to protect your data and ensure that your information is only used for the purposes of your project.",
       isOpen: false,
     },
     {
       id: 3,
-      question: "What is JavaScript?",
+      question:
+        "What makes British Analytica different from other consultancy companies in Tashkent?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ut esse pariatur fugiat tenetur dolores, mollitia qui! Quisquam, dolorem consequuntur nesciunt omnis architecto magni voluptatum reprehenderit. Officiis minima reprehenderit dolores!",
+        "British Analytica is a unique consultancy company in Tashkent that combines international expertise with local knowledge. The company has a team of experienced consultants who are passionate about helping businesses succeed in Uzbekistan.",
       isOpen: false,
     },
   ]);
@@ -38,7 +40,10 @@ const FAQs = () => {
     <div className="container">
       <section className="questions">
         <div className="main">
-          <p className="title">Frequently Asked Questions (FAQs)</p>
+          <p className="title">
+            Our vision: Empowering Central Asian economies to become the new
+            engines of global growth.
+          </p>
           <div className="questions-container">
             {faqItems.map((item) => (
               <div

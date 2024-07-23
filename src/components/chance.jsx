@@ -1,96 +1,226 @@
-import "../assets/index.css";
-import { useState } from "react";
-import File1 from "../assets/file-1.pdf";
-import File2 from "../assets/file-2.pdf";
+import React, { useState } from "react";
 
 const Chance = () => {
-  const [file, setFile] = useState(null);
-  const [isOpenModal, setIsOpenModal] = useState(true);
+  const [text, setText] = useState("");
+  const [isOpen, setIsOpen] = useState(true);
 
-  const renderFile = (number) => {
-    setIsOpenModal((prevState) => !prevState);
-    if (number === 1) {
-      setFile(File1);
-    }
-    if (number === 2) {
-      setFile(File2);
-    }
+  const data = [
+    {
+      id: 1,
+      title: "Consultation",
+      text: "Meet with the key stakeholders or business owners to understand their concerns, objectives, and specific areas of focus for the health check.",
+    },
+    {
+      id: 2,
+      title: "Gather Information",
+      text: "Collect relevant information about the business, including financial statements, operational data, marketing strategies, organizational structure, and any recent performance reports.",
+    },
+    {
+      id: 3,
+      title: "SWOT Analysis:",
+      text: "Conduct a SWOT (Strengths, Weaknesses, Opportunities, Threats) analysis to identify internal and external factors impacting the business.",
+    },
+    {
+      id: 4,
+      title: "Financial Analysis",
+      text: "Review financial statements, cash flow statements, and revenue projections to evaluate the financial health of the business. This analysis will involve following steps.",
+    },
+    {
+      id: 5,
+      title: "Risk Assessment",
+      text: "Identify financial risks such as market risk, credit risk, and liquidity risk that could impact the company's financial stability. This will involve following steps.",
+    },
+    {
+      id: 6,
+      title: "Operational Assessment:",
+      text: "Assess operational processes, efficiency, and effectiveness in areas such as production, supply chain, and customer service. This includes.",
+    },
+    {
+      id: 7,
+      title: "Organizational Analysis",
+      text: "Review the current organizational structure, leadership capabilities, and employee skills to ensure alignment with business objectives.",
+    },
+    {
+      id: 8,
+      title: "Market Analysis",
+      text: "Evaluate market trends, customer preferences, competitive landscape, and opportunities for growth in the industry. The key steps involved are as follows. ",
+    },
+    {
+      id: 9,
+      title: "Customer Feedback",
+      text: "Gather feedback from customers or clients to understand their satisfaction levels, needs, and expectations.",
+    },
+    {
+      id: 10,
+      title: "Benchmarking",
+      text: "Compare the business's performance metrics with industry benchmarks to identify areas of improvement.",
+    },
+    {
+      id: 11,
+      title: "Action Plan",
+      text: "Develop a comprehensive report outlining findings, recommendations, and an actionable plan for addressing identified issues and optimizing business performance.",
+    },
+    {
+      id: 12,
+      title: "Business Analysis Solutions (Diagnosis)",
+      text: "Assessing the current state of the business, identifying areas for improvement, and developing strategies to drive growth and success. Conducting in-depth analysis of a company's performance, processes, and market dynamics to identify areas of improvement and growth opportunities.",
+    },
+    {
+      id: 13,
+      title: "Risk management",
+      text: "Risk management is the identification, assessment, and prioritization of risks followed by coordinated and economical application of resources to minimize, monitor, and control the probability and impact of unforeseen events. It aims to proactively mitigate potential risks to an organization's objectives, assets, and stakeholders.",
+    },
+    {
+      id: 14,
+      title: "Governance management",
+      text: "Governance management refers to the system and processes by which organizations are directed, controlled, and held accountable. It encompasses the structures, policies, and procedures put in place to ensure that an organization operates efficiently, ethically, and in alignment with its strategic goals and regulatory requirements.",
+    },
+    {
+      id: 15,
+      title: "Organizational Development",
+      text: "Supporting organizations in improving their structures, culture, and capabilities to enhance overall performance and competitiveness.",
+    },
+    {
+      id: 16,
+      title: "Market Research and Analysis",
+      text: "Conducting research on industry trends, market demands, and consumer behavior to help companies make informed strategic decisions.",
+    },
+    {
+      id: 17,
+      text: "HR Strategy",
+      text: "Human Resource (HR) strategy, also referred to as human capital advisory or HRM consulting, we advise about implementation activities related to the management of an organisation’s human capital and the HR function. The scope of services range from overarching work on talent management, cadre management, human capital strategy, to the design and deployment of a compensation & benefits framework, down to the transformation of the HR function. ",
+    },
+    {
+      id: 18,
+      title: "Business Process Reengineering (BPR)",
+      text: "Involves analyzing and redesigning workflows and processes within an organization to increase efficiency, eliminate bottlenecks, and improve performance.",
+    },
+    {
+      id: 19,
+      title: "Performance Management Services",
+      text: "Provides tools and strategies to monitor, evaluate, and enhance the performance of individuals, teams, and the organization as a whole by utilizing SMART and relevant KPIs.",
+    },
+    {
+      id: 20,
+      title: "Strategic Evaluation Services",
+      text: "Focuses on evaluating the company's current strategy, market position, and competitive landscape to identify strengths, weaknesses, opportunities, and threats. Providing assessments and evaluations of organizational strategies, structures, operations, and performances to ensure they align with business goals.",
+    },
+    {
+      id: 21,
+      title: "Strategic Planning",
+      text: "Collaborating with leadership to develop long-term strategic plans that align with the company's mission, vision, and objectives.",
+    },
+    {
+      id: 22,
+      title: "Problem-Solving Consultation (Troubleshooting)",
+      text: "Offers expertise in identifying, analyzing, and resolving complex business problems to help clients achieve their goals effectively. Offering strategic problem-solving techniques and frameworks to address challenges, optimize operations, and drive innovation within the organization.",
+    },
+    {
+      id: 23,
+      title: "Change Management Consulting",
+      text: "Assists organizations in planning, implementing, and managing change initiatives to ensure successful transitions and sustainable results. Assisting organizations in managing transitions, implementing new processes, and ensuring smooth change adoption within the company. ",
+    },
+    {
+      id: 24,
+      title: "Digital Strategy",
+      text: "Digital strategy involves leveraging digital technologies, channels, and platforms to achieve business objectives and enhance the overall performance of an organization. It encompasses developing a roadmap for how a company will use digital resources to generate value, improve customer experiences, increase operational efficiency, and stay competitive in the digital age.",
+    },
+    {
+      id: 25,
+      title: "Regional and International Economic Development Services",
+      text: "Regional and international economic development services focus on fostering economic growth, sustainable development, and increased prosperity within specific regions or across international borders. These services typically involve collaboration between governments, businesses, and organizations to design and implement strategies that promote investment, trade, infrastructure development, job creation, and overall economic well-being on a regional or global scale. ",
+    },
+    {
+      id: 26,
+      title: "Business Model Transformation (BMT)",
+      text: "Business Model Transformation refers to the process of fundamentally changing and adapting the way a business creates, captures, and delivers value to its stakeholders. This involves reevaluating and modifying key elements of a company's business model to remain relevant and competitive in changing markets.",
+    },
+    {
+      id: 27,
+      title: "Trust management",
+      text: "Trust management involves the establishment, maintenance, and nurturing of trust within an organization or between parties involved in business transactions. It focuses on building credibility, reliability, and integrity in relationships to ensure transparency, collaboration, and sustainable partnerships.",
+    },
+    {
+      id: 28,
+      title: "Mergers and Acquisitions (M&A) - Corporate Restructuring",
+      text: "Providing guidance on mergers, acquisitions, divestitures, and other forms of corporate restructuring to optimize business operations and portfolio management.",
+    },
+  ];
+
+  const openModal = (data) => {
+    setIsOpen((prevState) => !prevState);
+    setText(data.text);
   };
 
   return (
     <div className="container">
-      <div id="privacy-viewer" className={isOpenModal && "hide-privacy-viewer"}>
+      <div id="privacy-viewer" className={isOpen && "hide-privacy-viewer"}>
         <div className="cover"></div>
         <div className="content">
           <div className="content-text">
             <i
               className="fa-solid fa-x"
-              onClick={() => setIsOpenModal((prevState) => !prevState)}
+              onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}
             ></i>
-            <p>
-              Eslatma!
+            <p style={{ color: "black", marginBottom: "15px" }}>
+              Reminder!
               <br />
             </p>
-            <iframe
-              src={file}
-              width="100%"
-              height={500}
-              frameborder="0"
-            ></iframe>
+            <p style={{ color: "black" }}>{text}</p>
           </div>
         </div>
       </div>
-
-      <section
-        className="chance"
+      <div
         id="services"
-        style={{ padding: "50px", borderRadius: "20px" }}
+        className="text-center"
+        style={{
+          color: "white",
+          padding: "20px",
+          borderRadius: "20px",
+          boxShadow: "10px 10px 10px rgba(0, 0, 0, 0.05)",
+          background: "linear-gradient(to right, #6372ff 0%, #5ca9fb 100%)",
+        }}
       >
-        <h2 className="chance-title" style={{ margin: "0px" }}>
-          Our services
-        </h2>
-        <hr className="sertificate-horizontal-rules" />
-
-        <div className="chance__rows">
-          <div className="chance__column">
-            <h2 className="chance__column-title">Express Diagnostic</h2>
-            <p className="chance__column-text">
-              We shall carry out an express diagnostic of your business, a
-              concise assessment of your company's overall well-being. It's like
-              a quick health checkup by a doctor to identify any potential
-              issues. Through this process, we will analyze your company's
-              financial systems, operational systems, risk analysis, and a
-              summary SWOT analysis. This will help identify areas where you're
-              excelling and uncover any potential weaknesses that need
-              addressing. The health check will provide valuable insights to
-              make informed decisions about your business's future what
-              immediate steps you need to take for growth and success. The
-              findings will be compiled into a report along with detailed
-              recommendations.
-            </p>
-            <div className="chance__price">
-              <span style={{ cursor: "pointer" }} onClick={() => renderFile(1)}>
-                Read more
-              </span>
-            </div>
-          </div>
-          <div className="chance__column">
-            <h2 className="chance__column-title">Product services</h2>
-            <p className="chance__column-text">
-              Aniq tushunchalar va tahlillarga sho'ng'ing. Ma'lumotlardan
-              mazmunli namunalarni olish, biznes qarorlarini qabul qilish
-              imkoniyatlarini kengaytirish uchun ilg'or usullarni o'rganing.
-              Bizning amaliy yondashuvimiz sizning ishga tayyor bo’lishingizni
-              ta'minlaydi.
-            </p>
-            <div className="chance__price">
-              <span style={{ cursor: "pointer" }} onClick={() => renderFile(2)}>
-                Read more
-              </span>
-            </div>
-          </div>
+        <div className="section-title">
+          <h2 style={{ color: "white" }}>Our services</h2>
+          <hr className="section-horizontal-rule" />
         </div>
-      </section>
+        <div className="grid">
+          {data
+            ? data.map((d, i) => (
+                <div
+                  key={`${d.name}-${i}`}
+                  style={{
+                    padding: "10px",
+                    minHeight: "10%",
+                    borderRadius: "20px",
+                    backgroundColor: "rgba(255, 255, 255, 0.2)",
+                    border: "2px solid rgba(255, 255, 255, 0.4)",
+                    backdropFilter: "blur(5px)",
+                  }}
+                  className="grid-column"
+                >
+                  <div className="icon-display">
+                    <p style={{ fontSize: "30px", marginTop: "10px" }}>
+                      {i + 1}
+                    </p>
+                    {/* <i style={{ fontSize: "25px" }} className={d.icon}></i> */}
+                  </div>
+                  <div className="service-desc">
+                    <h3 style={{ color: "white" }}>{d.title}</h3>
+                    <p>{d.text}</p>
+                    <span
+                      style={{ color: "white", cursor: "pointer" }}
+                      onClick={() => openModal(d)}
+                    >
+                      Read More
+                    </span>
+                  </div>
+                </div>
+              ))
+            : "loading"}
+        </div>
+      </div>
     </div>
   );
 };

@@ -14,19 +14,20 @@ export const Header = (props) => {
         <div className="overlay" style={backgroundImage}>
           <div className="container">
             <div className="row">
-              <div className="col-md-8 col-md-offset-2 intro-text">
-                <h1 style={{ fontSize: "55px" }}>
+              <div className="col-md-12 intro-text">
+                <h1 style={{ fontSize: "22px" }}>
                   {props.data ? props.data.title : "Loading"}
                   <span></span>
                 </h1>
-                <p style={{ fontSize: "18px" }}>
+                {/* <p style={{ fontSize: "16px" }}>
                   {props.data ? props.data.paragraph : "Loading"}
-                </p>
+                </p> */}
                 <a
+                  style={{ marginTop: "20px" }}
                   href="#contact"
                   className="btn btn-custom btn-lg page-scroll"
                 >
-                  Connection
+                  Book a consultance
                 </a>{" "}
               </div>
             </div>

@@ -40,10 +40,10 @@ const FAQs = () => {
     <div className="container">
       <section className="questions">
         <div className="main">
-          <p className="title">
+          {/* <p className="title">
             Our vision: Empowering Central Asian economies to become the new
             engines of global growth.
-          </p>
+          </p> */}
           <div className="questions-container">
             {faqItems.map((item) => (
               <div

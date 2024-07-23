@@ -19,10 +19,18 @@ export const Team = () => {
           <h2>OUR TEAM</h2>
           <hr className="sertificate-horizontal-rule1" />
 
+          <p style={{ fontSize: "30px" }}>Our mission</p>
+
           <p>
             Empowering organizations to achieve sustainable success and maximum
             value through innovative strategic solutions specifically shaped to
             surmount the complexities of the modern business world.
+          </p>
+
+          <p style={{ fontSize: "30px" }}>Our vision</p>
+          <p>
+            Empowering Central Asian economies to become the new engines of
+            global growth.
           </p>
         </div>
         <div id="row">

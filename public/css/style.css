@@ -246,6 +246,18 @@ header .intro-text {
   padding-bottom: 200px;
   text-align: center;
 }
+
+.intro-text > h1 {
+  @media only screen and (max-width: 576px) {
+    font-size: 16px !important;
+  }
+}
+.intro-text > a {
+  @media only screen and (max-width: 576px) {
+    font-size: 14px !important;
+  }
+}
+
 /* Features Section */
 #features {
   background: #f6f6f6;

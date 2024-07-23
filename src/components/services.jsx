@@ -16,7 +16,7 @@ export const Services = (props) => {
       >
         <div className="section-title">
           <h2 style={{ color: "white" }}>Our values</h2>
-          <hr className="section-horizontal-rule"/>
+          <hr className="section-horizontal-rule" />
         </div>
         <div className="grid">
           {props.data
@@ -34,7 +34,10 @@ export const Services = (props) => {
                   className="grid-column"
                 >
                   <div className="icon-display">
-                    <i style={{ fontSize: "25px" }} className={d.icon}></i>
+                    <p style={{ fontSize: "30px", marginTop: "10px" }}>
+                      {i + 1}
+                    </p>
+                    {/* <i style={{ fontSize: "25px" }} className={d.icon}></i> */}
                   </div>
                   <div className="service-desc">
                     <h3 style={{ color: "white" }}>{d.name}</h3>

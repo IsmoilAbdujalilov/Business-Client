@@ -40,7 +40,7 @@ export const Team = () => {
               <div className="caption">
                 <div style={box}>
                   <p>CEO</p>
-                  <p>+15 years</p>
+                  {/* <p>+15 years</p> */}
                 </div>
                 <h4>Diyorbek Murodov</h4>
                 <p>Bachelor of International Economic Relations TIU </p>

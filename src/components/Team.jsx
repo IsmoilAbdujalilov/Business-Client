@@ -58,7 +58,7 @@ export const Team = () => {
               <div className="caption">
                 <div style={box}>
                   {/* <p>Kirmani-Massala</p> */}
-                  <p>+20 years</p>
+                  <p>Partner</p>
                 </div>
                 <h4>Farooq A. Kirmani-Massala</h4>
                 <p>MBA from Neoma Business School, Reims, France</p>

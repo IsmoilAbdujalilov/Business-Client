@@ -154,7 +154,7 @@ const Sertificate = () => {
               />
             </span>
           </SwiperSlide>
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <span
               style={{ cursor: "pointer" }}
               onClick={() => openModal(Sertificate7)}
@@ -171,7 +171,7 @@ const Sertificate = () => {
                 alt="sertificate"
               />
             </span>
-          </SwiperSlide>
+          </SwiperSlide> */}
           <SwiperSlide>
             <span
               style={{ cursor: "pointer" }}
@@ -244,7 +244,7 @@ const Sertificate = () => {
               />
             </span>
           </SwiperSlide>
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <span
               style={{ cursor: "pointer" }}
               onClick={() => openModal(Sertificate13)}
@@ -261,7 +261,7 @@ const Sertificate = () => {
                 alt="sertificate"
               />
             </span>
-          </SwiperSlide>
+          </SwiperSlide> */}
           <SwiperSlide>
             <span
               style={{ cursor: "pointer" }}

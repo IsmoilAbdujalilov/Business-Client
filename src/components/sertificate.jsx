@@ -1,18 +1,17 @@
-import React, { useState } from "react";
 import "../assets/index.css";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Sertificate1 from "../assets/sertificate-1.png";
 import Sertificate5 from "../assets/sertificate-5.png";
 import Sertificate6 from "../assets/sertificate-6.png";
-import Sertificate7 from "../assets/sertificate-7.png";
 import Sertificate8 from "../assets/sertificate-8.png";
 import Sertificate9 from "../assets/sertificate-9.png";
 import { Autoplay, Navigation } from "swiper/modules";
 import Sertificate10 from "../assets/sertificate-10.png";
 import Sertificate11 from "../assets/sertificate-11.png";
-import Sertificate13 from "../assets/sertificate-13.png";
 import Sertificate14 from "../assets/sertificate-14.png";
 import Sertificate15 from "../assets/sertificate-15.png";
+import Sertificate16 from "../assets/sertificate-16.jpg";
 
 const Sertificate = () => {
   const [file, setFile] = useState(null);
@@ -154,10 +153,10 @@ const Sertificate = () => {
               />
             </span>
           </SwiperSlide>
-          {/* <SwiperSlide>
+          <SwiperSlide>
             <span
               style={{ cursor: "pointer" }}
-              onClick={() => openModal(Sertificate7)}
+              onClick={() => openModal(Sertificate16)}
             >
               <img
                 height={400}
@@ -167,11 +166,11 @@ const Sertificate = () => {
                   objectPosition: "center center",
                 }}
                 width={300}
-                src={Sertificate7}
+                src={Sertificate16}
                 alt="sertificate"
               />
             </span>
-          </SwiperSlide> */}
+          </SwiperSlide>
           <SwiperSlide>
             <span
               style={{ cursor: "pointer" }}
@@ -244,24 +243,6 @@ const Sertificate = () => {
               />
             </span>
           </SwiperSlide>
-          {/* <SwiperSlide>
-            <span
-              style={{ cursor: "pointer" }}
-              onClick={() => openModal(Sertificate13)}
-            >
-              <img
-                height={400}
-                style={{
-                  height: "100%",
-                  width: "100%",
-                  objectPosition: "center center",
-                }}
-                width={300}
-                src={Sertificate13}
-                alt="sertificate"
-              />
-            </span>
-          </SwiperSlide> */}
           <SwiperSlide>
             <span
               style={{ cursor: "pointer" }}

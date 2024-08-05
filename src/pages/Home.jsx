@@ -31,14 +31,14 @@ const Home = () => {
       <Header data={landingPageData.Header} />
       {/* <Features data={landingPageData.Features} /> */}
       <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
+      {/* <Services data={landingPageData.Services} /> */}
       <Sertificate />
       {/* <Gallery data={landingPageData.Gallery} /> */}
       {/* <Testimonials data={landingPageData.Testimonials} /> */}
-      <Chance />
-      <Team data={landingPageData.Team} />
+      {/* <Chance /> */}
+      {/* <Team data={landingPageData.Team} /> */}
       <Form />
-      <FaqQuestion />
+      {/* <FaqQuestion /> */}
     </div>
   );
 };
